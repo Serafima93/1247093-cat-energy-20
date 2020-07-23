@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html class="page" lang="ru">
    <head>
       <meta charset="UTF-8">
@@ -6,8 +6,8 @@
    </head>
    <body class="page__body">
       <header class="page-header">
-         <a class="page-header__logo">
-         <img src="img/logo-mobile.svg" width="33.32" height="37.61" alt="Логотип в виде кошки">
+         <a class="page-header__logo logo">
+         <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип в виде кошки">
          <img src="img/logotext-mobile.svg" width="101" height="18" alt="Cat energy">
          </a>
          <nav class="main-nav">
@@ -17,17 +17,17 @@
             <div class="main-nav__wrapper">
                <ul class="main-nav__list site-list">
                   <li class="site-list__item site-list__item--active">
-                     <a>
+                     <a class="site-list__link">
                      Главная
                      </a>
                   </li>
                   <li class="site-list__item">
-                     <a href="catalog.html">
+                     <a href="catalog.html" class="site-list__link">
                      Каталог продукции
                      </a>
                   </li>
                   <li class="site-list__item">
-                     <a href="form.html">
+                     <a href="form.html" class="site-list__link">
                      Подбор программы
                      </a>
                   </li>
@@ -45,32 +45,32 @@
                <a class="introduction__btn button" href="form.html">Подобрать программу</a>
             </div>
          </section>
-         <article class="programs">
-            <section class="programs__lose programe">
-               <div class="program_wrap">
-                  <div>
-                     <img src="img/cat-sitting.svg" class="programe__img" width="50" height="53" alt="Кошка сидит">
+         <article class="program">
+            <section class="program__lose programme">
+               <div class="programme__wrap">
+                  <div class="programme__img">
+                     <img src="img/cat-sitting.svg" width="50" height="53" alt="Кошка сидит">
                   </div>
-                  <header class="programe__title">Похудение</header>
-                  <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                  <div>
-                     <a href="catalog.html" class="programe__catalog">
+                  <h2 class="programme__title">Похудение</h2>
+                  <p class="programme__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                  <div class="programme__catalog">
+                     <a href="catalog.html" class="catalog__link">
                      Каталог Slim
                      </a>
                   </div>
                </div>
             </section>
-            <section class="programe__gain programe">
-               <div class="program_wrap">
-                  <div>
+            <section class="program__gain programme">
+               <div class="programme__wrap">
+                  <div class="programme__img">
                      <img src="img/cat-walking.svg" width="50" height="53" alt="Кошка идет">
                   </div>
-                  <header class="programe__title">Набор Массы</header>
-                  <p class="program__text">
+                  <h2 class="programme__title">Набор Массы</h2>
+                  <p class="programme__text">
                      Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
                   </p>
-                  <div>
-                     <a href="catalog.html" class="programe__catalog">
+                  <div class="programme__catalog">
+                     <a href="catalog.html" class="catalog__link">
                      Каталог Pro
                      </a>
                   </div>
@@ -80,7 +80,7 @@
          <section class="explanations">
             <h2 class="explanations__title">Как это работает</h2>
             <div class="explanations__wrap">
-               <ul explanations__list rubric>
+               <ul class="explanations__list rubric">
                   <li class="rubric__item">Функциональное питание содержит только полезные питательные вещества.</li>
                   <li class="rubric__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
                   <li class="rubric__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
@@ -98,25 +98,26 @@
             <div class="page-footer__social social">
                <ul class="social__list">
                   <li class="social__item">
-                     <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                     <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="blank">
                      <img src="img/vkontakte-icon.svg" width="22" height="22" alt="vkontakte">
                      </a>
                   </li>
                   <li class="social__item">
-                     <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                     <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="blank">
                      <img src="img/instagram-icon.svg" width="22" height="22" alt="instagram">
                      </a>
                   </li>
                   <li class="social__item">
-                     <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                     <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="blank">
                      <img src="img/facebook-icon.svg" width="22" height="22" alt="facebook">
                      </a>
                   </li>
                </ul>
             </div>
             <div class="page-footer__copyright copyright">
-               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-               <img src="img/htmlacademy.svg" class="" width="34" height="27" alt="Изображение логотипа htmlacademy">
+               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy
+               <img src="img/htmlacademy.svg" class="copyright__logo" width="34" height="27" alt="логотип htmlacademy">
+               </a>
             </div>
          </div>
       </footer>
