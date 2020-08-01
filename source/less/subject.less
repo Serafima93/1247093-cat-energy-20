@@ -1,7 +1,15 @@
 .subject__link {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--basic-black);
+  color: @basic-black;
   text-transform: uppercase;
-}
+  @media (max-width: @mobile-width) {
+  }
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  }

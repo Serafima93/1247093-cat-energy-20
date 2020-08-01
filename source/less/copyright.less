@@ -1,7 +1,17 @@
 .copyright__link {
-  font-family: "Arial", sans-serif;
+  font-family: @font-part;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: @dark-grey;
+  @media (min-width: @tablet-width) {}
+  @media (min-width: @desktop-width) {}
+}
+
+.copyright__logo {
+  padding-top: 22px;
+  @media (min-width: @tablet-width) {
+      padding-top: 0px;
+  }
+  @media (min-width: @desktop-width) {}
 }

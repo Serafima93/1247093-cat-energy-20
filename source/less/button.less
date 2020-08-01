@@ -1,9 +1,58 @@
 .button {
   color: @basic-white;
-  background-color: @bright-green;
+  text-transform: uppercase;
+  background-color: red;
   padding-left: 44px;
   padding-right: 44px;
   padding-top: 7px;
   padding-bottom: 7px;
-  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 22px;
+  text-align: center;
+  @media (min-width: @tablet-width) {
+      padding-left: 26px;
+      padding-right: 26px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      background-color: yellow;
+      font-size: 20px;
+      line-height: 0px;
+      margin: 0;
+  }
+  @media (min-width: @desktop-width) {
+      font-size: 20px;
+      padding-left: 26px;
+      padding-right: 26px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      background-color: @bright-green;
+      font-size: 20px;
+      line-height: 0px;
+  }
+}
+
+.button__order {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 109px;
+  padding-right: 109px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media (min-width: @tablet-width) {
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 93px;
+      padding-right: 93px;
+  }
+  @media (min-width: @desktop-width) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 53px;
+      padding-right: 53px;
+  }
 }

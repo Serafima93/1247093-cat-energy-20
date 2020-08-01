@@ -1,7 +1,33 @@
-.table__name {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: var(--special-dark-grey);
+.table {
+  padding-bottom: 22px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 33px;
+    margin: 0;
+  }
 }
+  .table__name {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @special-dark-grey;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  @media (max-width: @mobile-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media (min-width: @tablet-width) {
+     margin-bottom: 21px;
+     margin-top:24px;
+     font-size: 20px;
+     line-height: 24px;
+     text-align: center;
+
+  }
+  @media (min-width: @desktop-width) {
+    margin-top:0 ;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  }

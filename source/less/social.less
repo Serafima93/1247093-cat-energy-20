@@ -1,5 +1,22 @@
-.social__item {
-  list-style: none;
-  border-top: 1px solid @border;
-  border-bottom: 1px solid @border;
-}
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+  @media (min-width: @desktop-width) {
+  }
+  }
+
+  .social__item {
+    list-style: none;
+    padding-left: 33px;
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    }
+  @media (min-width: @desktop-width) {
+    padding-left: 30px;
+
+  }
+  }

@@ -1,3 +1,35 @@
 .page-footer {
   background-color: @neutral;
 }
+.page-footer__wrapper {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+display: flex;
+flex-direction: column;
+padding-top: 39px;
+padding-bottom: 22px;
+text-align: center;
+@media (min-width: @tablet-width) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 55px;
+  padding-bottom: 61px;
+}
+@media (min-width: @desktop-width) {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 106px;
+  padding-top: 57px;
+  padding-bottom: 58px;
+}
+}
+.page-footer__tagline {
+  padding-bottom: 32px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
