@@ -1,6 +1,19 @@
 .main-nav__wrapper {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
   text-transform: uppercase;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
 }

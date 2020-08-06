@@ -1,7 +1,29 @@
+.table {
+  padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 33px;
+    margin: 0;
+  }
+}
+
 .table__name {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: @normal;
   text-transform: uppercase;
-  color: var(--special-dark-grey);
+  color: @special-dark-grey;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }

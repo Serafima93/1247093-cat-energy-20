@@ -1,14 +1,44 @@
 .detail__name {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: @normal;
   text-transform: uppercase;
   color: @dark-black;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  margin-top: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 49px;
+    margin-bottom: 23px;
+    margin-left: 96px;
+    margin-right: 94px;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+  }
 }
 
 .detail__text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-weight: @normal;
   color: @dark-grey;
+  font-size: 12px;
+  line-height: 1.3;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 57px;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }

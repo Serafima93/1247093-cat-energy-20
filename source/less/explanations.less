@@ -1,10 +1,41 @@
 .explanations {
   background-color: @basic-white;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  padding-left: 20px;
+  padding-right: 21px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 106px;
+    padding-bottom: 11px;
+  }
 }
 
 .explanations__title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  font-weight: @normal;
   color: @basic-black;
+  padding-bottom: 38px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.1;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 72px;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 32px;
+    font-size: 36px;
+    line-height: 1.1;
+  }
 }
