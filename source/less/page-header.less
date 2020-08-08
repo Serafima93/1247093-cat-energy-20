@@ -1,18 +1,20 @@
 .page-header {
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
+  position: relative;
+  margin: 0;
+  padding-top: 12px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 29px;
+    padding-bottom: 54px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-bottom: 54px;
   }
 }
