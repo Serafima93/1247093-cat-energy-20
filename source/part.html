@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <title>Интернет магазин «Cat Energy»</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap%22%20rel=%22stylesheet"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700.." rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -17,17 +16,21 @@
     <h2 class="example__title">Живой пример</h2>
     <section class="example__text explanation">
       <p class="explanation__text">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
+        без
         изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
       <div class="explanation__ins ins">
-        <span class="ins__parameter">5 КГ</span>
-        <span class="ins__parameter">снижение веса</span>
+        <div class="ins-parameter">
+          <span class="">5 КГ</span>
+          <span class="">снижение веса</span>
+        </div>
+        <div class="ins-parameter">
+          <span class="">60 ДНЕЙ</span>
+          <span class="">затрачено времени</span>
+        </div>
       </div>
-      <div class="explanation__ins ins">
-        <span class="ins__parameter">60 ДНЕЙ</span>
-        <span class="ins__parameter">затрачено времени</span>
-      </div>
+
       <p class="explanation__price">Затраты на питание: 15 000 РУБ.</p>
       <img class="explanation__img">
       <div class="explanation__comparison comparison">
@@ -53,8 +56,8 @@
       <div class="goods__variants variants">
         <p class="variants__title">Сахарозаменитель</p>
         <div class="variants__table packaging">
-          <span class="packaging__parameters">1 упаковка (100 г)</span>
-          <span class="packaging__parameters">200 Р.</span>
+          <span class="packaging__parameters packaging__parameters--measure">1 упаковка (100 г)</span>
+          <span class="packaging__parameters packaging__parameters--price">200 Р.</span>
         </div>
       </div>
       <a class="goods__order" href="#">заказать</a>
@@ -63,8 +66,8 @@
       <div class="goods__variants variants">
         <p class="variants__title">питьевая вода</p>
         <div class="variants__table packaging">
-          <span class="packaging__parameters">5 литров</span>
-          <span class="packaging__parameters">50 Р.</span>
+          <span class="packaging__parameters packaging__parameters--measure">5 литров</span>
+          <span class="packaging__parameters packaging__parameters--price">50 Р.</span>
         </div>
       </div>
       <a class="goods__order" href="#">заказать</a>
@@ -73,8 +76,8 @@
       <div class="goods__variants variants">
         <p class="variants__title">молоко</p>
         <div class="variants__table packaging">
-          <span class="packaging__parameters">1 литр</span>
-          <span class="packaging__parameters">100 Р.</span>
+          <span class="packaging__parameters packaging__parameters--measure">1 литр</span>
+          <span class="packaging__parameters packaging__parameters--price">100 Р.</span>
         </div>
       </div>
       <a class="goods__order" href="#">заказать</a>
@@ -83,14 +86,22 @@
       <div class="goods__variants variants">
         <p class="variants__title">витамины</p>
         <div class="variants__table packaging">
-          <span class="packaging__parameters">1 упаковка (30 г)</span>
-          <span class="packaging__parameters">300 Р.</span>
+          <span class="packaging__parameters packaging__parameters--measure">1 упаковка (30 г)</span>
+          <span class="packaging__parameters packaging__parameters--price">300 Р.</span>
         </div>
       </div>
       <a class="goods__order" href="#">заказать</a>
     </section>
-    <section class="additional__parameter goods">
+    <div class="additional__gift">Закажите все и получите чехол для кота в подарок!</div>
   </article>
+  <section class="cooperation">
+    <div class="cooperation__text">
+      приглашаем к сотрудничеству дилеров!
+    </div>
+    <div class="cooperation__adress">
+      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+    </div>
+  </section>
 
   <!--form-->
   <div class="selection">
@@ -98,39 +109,60 @@
     <p class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   </div>
   <form action="https://echo.htmlacademy.ru" method="GET" class="form">
-    <fieldset class="form__main">
-      <label for="name">ИМЯ:</label>
-      <input type="text" id="name" value="барсик">
-      <label for="volume">Вес (кг):</label>
-      <input type="text" id="volume" value="7">
-      <label for="age">Возраст (лет):</label>
-      <input type="text" id="age" value="7">
+
+    <fieldset class="form__main variants">
+      <div>
+        <label for="name" class="variants__question">ИМЯ:</label>
+        <input type="text" id="name" value="БАРСИК">
+      </div>
+      <div>
+        <label for="volume" class="variants__question">Вес (кг):</label>
+        <input type="text" id="volume" value="7">
+      </div>
+      <div>
+        <label for="age" class="variants__question">Возраст (лет):</label>
+        <input type="text" id="age" value="7">
+      </div>
+
     </fieldset>
 
-    <fieldset class="form__type">
-      <input type="checkbox" id="lose" checked>
-      <label for="lose">похудение</label>
-      <input type="checkbox" id="gain">
-      <label for="gain">Набор массы</label>
-      <input type="checkbox" id="advice">
-      <label for="advice">Не знаю (Нужен ваш совет)</label>
+    <fieldset class="form__type variants">
+      <div>
+        <input type="checkbox" id="lose" checked>
+        <label for="lose">похудение</label>
+      </div>
+      <div>
+        <input type="checkbox" id="gain">
+        <label for="gain">Набор массы</label>
+      </div>
+      <div>
+
+        <input type="checkbox" id="advice">
+        <label for="advice">Не знаю (Нужен ваш совет)</label>
+      </div>
+
     </fieldset>
 
-    <fieldset class="form_contacts">
-      <legend>Контактные данные (владельца кота)</legend>
-      <label for="email">Email</label>
-      <input type="text" id="email" value="kuklachev@gmail.com">
-      <label for="phone">Вес (кг):</label>
-      <input type="text" id="phone" value="8 (960) 900-60-90">
+    <fieldset class="form__contacts variants">
+      <legend class="variants__name">Контактные данные (владельца кота)</legend>
+      <div>
+        <label for="email">Email:*</label>
+        <input type="text" id="email" value="kuklachev@gmail.com">
+      </div>
+      <div>
+        <label for="phone">Телефон:*</label>
+        <input type="text" id="phone" value="8 (960) 900-60-90">
+      </div>
+
     </fieldset>
 
-    <fieldset class="form__comment">
-      <legend>Комментарий</legend>
+    <fieldset class="form__comment variants">
+      <legend class="variants__name">Комментарий</legend>
       <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повАдках кота</textarea>
     </fieldset>
 
-    <fieldset class="form__additional">
-      <legend>Дополнительно</legend>
+    <fieldset class="form__additional variants">
+      <legend class="variants__name">Дополнительно</legend>
       <input type="checkbox" id="sugar" checked>
       <label for="sugar">сахарозаменитель</label>
 
