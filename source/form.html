@@ -50,6 +50,109 @@
 
   <main class="container page__main">
     <div class="page-main__wrapper">
+      <div class="selection">
+        <h1 class="selection__title">Подбор программы</h1>
+        <p class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
+      <form action="https://echo.htmlacademy.ru" method="GET" class="form">
+
+        <fieldset class="form__main variants">
+          <div class="variants__selections">
+            <label for="name" class="variants__question">ИМЯ:</label>
+            <input type="text" id="name" value="БАРСИК">
+          </div>
+          <div class="variants__selections">
+
+            <label for="volume" class="variants__question">Вес (кг):</label>
+            <input type="text" id="volume" value="7">
+          </div>
+          <div class="variants__selections">
+
+            <label for="age" class="variants__question">Возраст (лет):</label>
+            <input type="text" id="age" value="7">
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form__type variants">
+          <div class="variants__selections">
+
+            <input type="checkbox" id="lose" checked>
+            <label for="lose">похудение</label>
+          </div>
+          <div class="variants__selections">
+
+            <input type="checkbox" id="gain">
+            <label for="gain">Набор массы</label>
+          </div>
+          <div class="variants__selections">
+
+            <input type="checkbox" id="advice">
+            <label for="advice">Не знаю (Нужен ваш совет)</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form__contacts variants">
+          <legend class="variants__name">Контактные данные (владельца кота)</legend>
+          <div class="variants__selections">
+            <label for="email">Email:*</label>
+            <input type="text" id="email" value="kuklachev@gmail.com">
+          </div>
+          <div class="variants__selections">
+
+            <label for="phone">Телефон:*</label>
+            <input type="text" id="phone" value="8 (960) 900-60-90">
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form__comment variants">
+          <legend class="variants__name">Комментарий</legend>
+          <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повАдках кота</textarea>
+        </fieldset>
+
+        <fieldset class="form__additional variants">
+          <legend class="variants__name variants__name--additional">Дополнительно</legend>
+          <div class="variants__wrap">
+
+            <div class="variants__selections">
+              <input type="checkbox" id="sugar" checked>
+              <label for="sugar">сахарозаменитель</label>
+            </div>
+
+            <div class="variants__selections">
+              <input type="checkbox" id="water">
+              <label for="water">питьевая вода</label>
+            </div>
+
+            <div class="variants__selections">
+              <input type="checkbox" id="milk">
+              <label for="milk">молоко</label>
+            </div>
+
+            <div class="variants__selections">
+              <input type="checkbox" id="vitamin">
+              <label for="vitamin">витамины</label>
+            </div>
+          </div>
+
+        </fieldset>
+        <div class="form__sent">
+          <button type="submit" class="form__button">отправить заявку</button>
+          <p class="form__note">* — Обязательные поля</p>
+        </div>
+      </form>
+
+      <section class="cooperation">
+        <div class="cooperation__text">
+          приглашаем к сотрудничеству дилеров!
+        </div>
+        <div class="cooperation__adress">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </div>
+      </section>
+
     </div>
   </main>
 
