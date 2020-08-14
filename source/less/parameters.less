@@ -3,6 +3,11 @@
   outline-offset: -5px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    max-width: 180px;
+    margin: 0 auto;
+  }
 }
 
 .parameters p {
@@ -11,6 +16,8 @@
   font-size: 12px;
   line-height: 1.3;
   color: @dark-grey;
+  width: 76px;
+
 
   @media (min-width: @tablet-width) {
     margin-top: 16px;
@@ -20,5 +27,6 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 17px;
+    line-height: 1;
   }
 }

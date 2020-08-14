@@ -1,17 +1,23 @@
 .logo-image {
-  padding-top: 12px;
-  padding-left: 20px;
-  padding-right: 23px;
+  padding-right: 0;
+
+  &:hover {
+    color: @opacity-color-first;
+  }
+
+  &:active {
+    color: @opacity-color-second;
+  }
 
   @media (min-width: @tablet-width) {
-    padding-top: 24px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 170px;
+    padding-top: 25px;
+    width: 174px;
     height: 52px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 53px;
+    width: 202px;
+    height: 60px;
   }
 }
