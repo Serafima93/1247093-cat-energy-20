@@ -180,6 +180,8 @@
   }
 }
 
+/*catalog*/
+
 .additional__title {
   text-align: start;
   font-size: 24px;
@@ -187,8 +189,13 @@
   color: @basic-black;
   margin-top: 28px;
   margin-bottom: 35px;
-}
 
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    margin-top: 68px;
+    margin-bottom: 80px;
+  }
+}
 
 .additional__gift {
   text-align: center;
@@ -201,8 +208,11 @@
 
   @media (min-width: @tablet-width) {
     text-align: start;
-    margin: 0;
   }
+}
+
+.additional__cooperation {
+  background-color: @neutral;
 }
 
 .variant {
@@ -228,6 +238,7 @@
     flex-direction: row;
     margin-bottom: 28px;
     margin-top: 26px;
+    font-size: 20px;
   }
 }
 
@@ -238,17 +249,25 @@
   font-family: @font-part;
 
   @media (min-width: @tablet-width) {
-    min-width: 400px;
     padding-bottom: 0;
     margin-top: 30px;
   }
 }
 
 .packaging__parameters {
+  font-family: @font-part;
   color: @dark-grey;
   font-size: 14px;
   line-height: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.1;
+    padding-left: 51px;
+  }
 }
+
+
 
 .packaging__parameters--price {
   text-transform: uppercase;
@@ -290,7 +309,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 }
 
@@ -306,9 +325,8 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 66px;
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.5;
     max-width: 323px;
-    padding-left: 20px;
   }
 }
 
@@ -352,6 +370,8 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
 
@@ -366,6 +386,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.options__communication {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -386,6 +413,13 @@
 }
 
 .form__main {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main__options {
   color: @dark-grey;
   border-bottom: 1px solid @border-color-basic;
   padding-bottom: 13px;
@@ -410,6 +444,7 @@
 }
 
 .form__button {
+  text-transform: uppercase;
   background-color: @bright-green;
   font-size: 16px;
   line-height: 1.2;
