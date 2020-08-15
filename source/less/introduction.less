@@ -1,10 +1,24 @@
 .introduction__wrap {
   font-family: @font-full;
-  background-color: @basic-white;
+  background-color: @bright-green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 100%;
   min-height: 305px;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-size: 768px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
 }
 
 .introduction__title {
