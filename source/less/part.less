@@ -334,9 +334,26 @@
 
 .options__selections {
   padding-bottom: 13px;
+  color: @dark-grey;
+  font-size: 16px;
+  line-height: 1.1;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 20px;
+  }
+}
+
+.options__selections input {
+  padding-bottom: 13px;
+  color: @dark-grey;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.options__wrap {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -380,17 +397,10 @@
   color: @basic-black;
 }
 
-.options__wrap {
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .form__button {
+  background-color: @bright-green;
   font-size: 16px;
   line-height: 1.2;
-  background-color: green;
   color: @basic-white;
   padding-left: 60px;
   padding-right: 60px;
@@ -399,7 +409,7 @@
   border: none;
   text-align: center;
   margin-top: 34px;
-  margin-bottom: 28px;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     padding-left: 50px;
@@ -413,6 +423,7 @@
 }
 
 .form__note {
+  font-family: @font-part;
   text-transform: initial;
   text-align: center;
   font-size: 14px;
@@ -434,4 +445,8 @@
   @media (min-width: @tablet-width) {
     display: flex;
   }
+}
+
+.data__coopearation {
+  background-color: @neutral;
 }
