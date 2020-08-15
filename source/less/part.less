@@ -192,7 +192,7 @@
   }
 }
 
-.variants {
+.variant {
   display: flex;
   flex-direction: column;
 
@@ -202,7 +202,7 @@
   }
 }
 
-.variants__title {
+.variant__title {
   text-align: start;
   text-transform: uppercase;
   font-size: 16px;
@@ -223,8 +223,7 @@
   justify-content: space-between;
   padding-bottom: 15px;
 
-  @media (min-width: 7@tablet-width) {
-    justify-content: space-between;
+  @media (min-width: @table-width) {
     min-width: 400px;
     padding-bottom: 0;
     margin-top: 30px;
