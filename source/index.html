@@ -58,6 +58,12 @@
           <p class="introduction__tagline">
             Занялся собой? Займись котом!
           </p>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <img class="" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+              alt="Продукт для кота">
+          </picture>
           <a class="button start__btn" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -122,7 +128,7 @@
           </p>
           <div class="explanation__ins ins">
             <!--try-->
-            <div>
+            <div class="ins__section">
               <div class="ins__parameter">
                 <span class="ins__parameter--number">5 КГ</span>
                 <span class="ins__parameter--text">снижение веса</span>
@@ -143,17 +149,15 @@
           </div>
         </section>
 
-        <section class="cooperation">
-
+        <section class="example__cooperation cooperation">
           <div class="cooperation__text">
             приглашаем к сотрудничеству дилеров!
           </div>
-
           <div class="cooperation__adress">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </div>
-
         </section>
+        <img class="example__map">
       </article>
 
     </div>
@@ -162,7 +166,7 @@
   <footer class="container page__footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__tagline tagline">
-        <img src="img/logo-footer.svg" class="" width="128" height="24" alt="Логотип Cat energy">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat energy">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
