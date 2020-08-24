@@ -33,7 +33,6 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -80,7 +79,7 @@
 
   @media (min-width: 1300px) {
     max-width: 700px;
-    text-align: start;
+    text-align: left;
     margin-top: 55px;
     margin-bottom: 75px;
   }
@@ -118,6 +117,11 @@
 .ins__parameter {
   display: flex;
   flex-direction: column;
+  border: 1px solid #d9d9d9;
+  border-radius:5px;
+  min-width: 162px;
+  min-height: 77px;
+  position: relative;
 }
 
 .ins__parameter--number {
@@ -141,6 +145,10 @@
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
+    position: absolute;
+    left:20px;
+    top:70px;
+    z-index: 2;
   }
 }
 
@@ -177,10 +185,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 16px;
-    margin-bottom: 70px;
-    margin-left: 11px;
-    margin-right: 20px;
+    margin:0;
   }
 }
 
@@ -280,7 +285,20 @@
     text-align: center;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
+    color:white;
+    position: relative;
   }
+}
+.additional__gift::after {
+  content:"";
+  position: absolute;
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  left: 50%;
+  top:50%;
+  z-index: 2;
+  width: 80px;
+  height: 83px;
 }
 
 .additional__cooperation {
@@ -605,4 +623,50 @@
 
 .data__coopearation {
   background-color: @neutral;
+}
+/* Ползунок */
+
+.toddler {
+  display: flex;
+}
+
+.filter-item {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.range-controls {
+	position: relative;
+	height: 41px;
+	padding-top: 19px;
+	border-radius: 5px;
+}
+
+.range-controls .scale {
+	height: 6px;
+  background-color: #DCDCDC;
+  width: 428px;
+}
+
+.scale {
+	margin-left: 5px;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #FFFFFF;
+	background-color: #68B738;
+	border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 black;
+}
+
+.range-controls .toggle-min {
+	left: 18px;
 }

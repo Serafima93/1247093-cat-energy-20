@@ -12,5 +12,17 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1.5;
+    position: relative;
   }
 }
+
+.subject__link::after {
+  content: "";
+  right: -60px;
+  top:10px;
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  background-image: url(../img/icon-right-arrow-long.svg);
+  background-repeat: no-repeat;
+  }

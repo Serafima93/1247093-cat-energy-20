@@ -34,7 +34,19 @@
     margin: 0;
     max-width: 100px;
     order: 0;
+    position: relative;
   }
+}
+.program__img::before{
+  content: "";
+  left: 0;
+  top:0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #68B738;
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .program__title {
