@@ -30,7 +30,6 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
 
 //Sprite
 const sprite = () => {
@@ -39,8 +38,6 @@ const sprite = () => {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
 }
-exports.sprite = sprite;
-
 
 //Images
 const images = () => {
@@ -54,11 +51,10 @@ const images = () => {
       }),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"))
 }
-exports.images = images;
 
 //Webp
-
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({
@@ -66,7 +62,6 @@ const createWebp = () => {
     }))
     .pipe(gulp.dest("build/img"));
 }
-exports.webp = webp;
 
 //Copy
 const copy = () => {
@@ -79,14 +74,9 @@ const copy = () => {
     })
     .pipe(gulp.dest("build"));
 };
-exports.copy = copy;
 
-//del
-const clean = () => {
-  return del("build");
-};
-exports.clean = clean;
-//правильно будет так? const clean = () => del("build"); exports.clean = clean;
+//del -clean
+const clean = () => del("build");
 
 
 //html
@@ -94,7 +84,6 @@ const html = () => {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("build"));
 }
-exports.html = html;
 
 
 //Build
@@ -105,7 +94,6 @@ const build = gulp.series(
   sprite,
   html
 );
-exports.build = build;
 
 
 // Server
@@ -122,26 +110,22 @@ const server = (done) => {
   done();
 }
 
-exports.server = server;
-
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  //gulp.watch("source/*.html").on("change", sync.reload);
   gulp.watch("source/*.html", gulp.series("html"));
 }
 
-// вы хотите чтобы я сделала так?
-//exports.styles = styles;
-//exports.sprite = sprite;
-//exports.images = images;
-//exports.webp = webp;
-//exports.copy = copy;
-//exports.clean = clean;
-//exports.build = build;
-//exports.build = build;
-//exports.server = server;
+exports.styles = styles;
+exports.sprite = sprite;
+exports.images = images;
+exports.createWebp = createWebp;
+exports.copy = copy;
+exports.clean = clean;
+exports.html = html;
+exports.build = build;
+exports.server = server;
 
 exports.default = gulp.series(
   clean,
