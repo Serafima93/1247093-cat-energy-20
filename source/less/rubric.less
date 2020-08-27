@@ -14,7 +14,7 @@
   font-family: @font-part;
   font-weight: @normal-weight;
   color: @dark-grey;
-  padding-left: 20px;
+  padding-left: 70px;
   padding-bottom: 24px;
   max-width: 200px;
   font-size: 14px;
@@ -29,14 +29,17 @@
   }
 }
 
-
 .rubric__item::before {
+  content: "";
+  position: absolute;
+  background-color: @bright-green;
+  width: 60px;
+  height: 60px;
+  left: 0;
+
   @media (min-width: @desktop-width) {
-    content: "";
-    position: absolute;
     width: 80px;
     height: 80px;
-    background-color: @bright-green;
     left: -20px;
   }
 }
