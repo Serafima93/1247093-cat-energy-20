@@ -228,6 +228,9 @@
   font-size: 14px;
   line-height: 1.4;
   color: @dark-grey;
+  display: flex;
+  flex-direction: column;
+  max-width: 140px;
 
   @media (min-width: @tablet-width) {
     text-align: end;
@@ -276,9 +279,12 @@
   font-size: 16px;
   font-family: @font-part;
   line-height: 1.2;
-  max-width: 160px;
   margin-right: 61px;
   margin-left: 68px;
+  position: relative;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
 
   @media (min-width: @tablet-width) {
     text-align: start;
@@ -287,9 +293,7 @@
   @media (min-width: @desktop-width) {
     text-align: center;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
-    background-repeat: no-repeat;
     color: white;
-    position: relative;
   }
 }
 

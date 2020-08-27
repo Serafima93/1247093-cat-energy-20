@@ -45,11 +45,9 @@
 }
 
 .rubric__item::after {
-  @media (min-width: @desktop-width) {
-    background-repeat: no-repeat;
-    left: -5px;
-    top: 15px;
-  }
+  background-repeat: no-repeat;
+  left: -5px;
+  top: 15px;
 }
 
 .rubric__item:first-child::after {
@@ -69,6 +67,8 @@
 }
 
 .rubric__item--leaf::after {
+  .rubric__phone;
+
   @media (min-width: @desktop-width) {
     content: "1";
     .rubric__after;
@@ -76,6 +76,8 @@
 }
 
 .rubric__item--powder::after {
+  .rubric__phone;
+
   @media (min-width: @desktop-width) {
     content: "2";
     .rubric__after;
@@ -83,6 +85,8 @@
 }
 
 .rubric__item--supper::after {
+  .rubric__phone;
+
   @media (min-width: @desktop-width) {
     content: "3";
     .rubric__after;
@@ -90,6 +94,8 @@
 }
 
 .rubric__item--clock::after {
+  .rubric__phone;
+
   @media (min-width: @desktop-width) {
     content: "4";
     .rubric__after;
