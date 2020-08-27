@@ -26,6 +26,8 @@
 }
 
 .program__img {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     order: 2;
   }
@@ -34,7 +36,6 @@
     margin: 0;
     max-width: 100px;
     order: 0;
-    position: relative;
   }
 }
 
@@ -43,11 +44,14 @@
   left: 0;
   top: 0;
   position: absolute;
-  width: 100px;
-  height: 100px;
   background-color: @bright-green;
   border-radius: 50%;
-  z-index: 0;
+  width: 50px;
+  height: 50px;
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .program__title {

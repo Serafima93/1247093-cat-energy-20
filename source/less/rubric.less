@@ -19,30 +19,34 @@
   max-width: 200px;
   font-size: 14px;
   line-height: 1.2;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 1.5;
     max-width: 246px;
     padding-left: 0;
-    position: relative;
   }
 }
 
 
 .rubric__item::before {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background-color: @bright-green;
-  left: -20px;
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: @bright-green;
+    left: -20px;
+  }
 }
 
 .rubric__item::after {
-  background-repeat: no-repeat;
-  left: -5px;
-  top: 15px;
+  @media (min-width: @desktop-width) {
+    background-repeat: no-repeat;
+    left: -5px;
+    top: 15px;
+  }
 }
 
 .rubric__item:first-child::after {
@@ -62,23 +66,31 @@
 }
 
 .rubric__item--leaf::after {
-  content: "1";
-  .rubric__after;
+  @media (min-width: @desktop-width) {
+    content: "1";
+    .rubric__after;
+  }
 }
 
 .rubric__item--powder::after {
-  content: "2";
-  .rubric__after;
+  @media (min-width: @desktop-width) {
+    content: "2";
+    .rubric__after;
+  }
 }
 
 .rubric__item--supper::after {
-  content: "3";
-  .rubric__after;
+  @media (min-width: @desktop-width) {
+    content: "3";
+    .rubric__after;
+  }
 }
 
 .rubric__item--clock::after {
-  content: "4";
-  .rubric__after;
+  @media (min-width: @desktop-width) {
+    content: "4";
+    .rubric__after;
+  }
 }
 
 .rubric__item--powder,
