@@ -16,5 +16,22 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 54px;
+    position: relative;
+  }
+}
+
+.page-header--index-page::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 696px;
+    background-color: @green-second;
+    z-index: -2;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
   }
 }

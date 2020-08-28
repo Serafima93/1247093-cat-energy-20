@@ -26,6 +26,8 @@
 }
 
 .program__img {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     order: 2;
   }
@@ -34,6 +36,26 @@
     margin: 0;
     max-width: 100px;
     order: 0;
+  }
+}
+
+.program__img::before {
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: @bright-green;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -65,6 +87,7 @@
   margin-bottom: 23px;
   font-size: 14px;
   line-height: 1.2;
+  max-width: 227px;
 
   @media (min-width: @tablet-width) {
     margin: 0;

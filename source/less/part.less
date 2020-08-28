@@ -33,7 +33,6 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -45,6 +44,7 @@
   margin: 0;
   padding-bottom: 25px;
   color: @dark-grey;
+  max-width: 279px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -80,7 +80,7 @@
 
   @media (min-width: 1300px) {
     max-width: 700px;
-    text-align: start;
+    text-align: left;
     margin-top: 55px;
     margin-bottom: 75px;
   }
@@ -118,6 +118,11 @@
 .ins__parameter {
   display: flex;
   flex-direction: column;
+  border: 1px solid @border-color-basic;
+  border-radius: 5px;
+  min-width: 162px;
+  min-height: 77px;
+  position: relative;
 }
 
 .ins__parameter--number {
@@ -138,9 +143,15 @@
   font-size: 12px;
   line-height: 1;
   font-family: @font-part;
+  max-width: 59px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    z-index: 2;
+    max-width: 162px;
   }
 }
 
@@ -177,10 +188,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 16px;
-    margin-bottom: 70px;
-    margin-left: 11px;
-    margin-right: 20px;
+    margin: 0;
   }
 }
 
@@ -220,6 +228,9 @@
   font-size: 14px;
   line-height: 1.4;
   color: @dark-grey;
+  display: flex;
+  flex-direction: column;
+  max-width: 140px;
 
   @media (min-width: @tablet-width) {
     text-align: end;
@@ -265,12 +276,11 @@
 
 .additional__gift {
   text-align: center;
-  font-size: 16px;
-  font-family: @font-part;
-  line-height: 1.2;
-  max-width: 160px;
-  margin-right: 61px;
-  margin-left: 68px;
+  min-height: 280px;
+  position: relative;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     text-align: start;
@@ -279,8 +289,30 @@
   @media (min-width: @desktop-width) {
     text-align: center;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
-    background-repeat: no-repeat;
+    color: white;
   }
+}
+
+.additional__explanation {
+  font-family: @font-part;
+  font-size: 16px;
+  font-family: @font-part;
+  line-height: 1.2;
+  margin: 0;
+  color: @basic-white;
+  max-width: 161px;
+}
+
+.additional__gift::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 80px;
+  height: 83px;
 }
 
 .additional__cooperation {
@@ -393,7 +425,7 @@
 /*form*/
 
 .selection__title {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1;
   color: @basic-black;
   margin-bottom: 37px;
@@ -544,8 +576,8 @@
   font-size: 16px;
   line-height: 1.2;
   color: @basic-white;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 7px;
   padding-bottom: 7px;
   border: none;
@@ -605,4 +637,108 @@
 
 .data__coopearation {
   background-color: @neutral;
+}
+
+/* Ползунок */
+
+.toddler {
+  display: flex;
+}
+
+.range-controls {
+  margin-top: 30px;
+  margin-left: 12px;
+  margin-right: 13px;
+  padding: 0;
+  border: none;
+  position: relative;
+  height: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    height: 41px;
+    padding-top: 19px;
+    border-radius: 5px;
+  }
+}
+
+.range-controls__scale {
+  width: 84px;
+  height: 14px;
+  border: 1px solid @border-neutral;
+  background-color: @basic-white;
+  border-radius: 50px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    height: 6px;
+    background-color: @milk-color;
+    width: 428px;
+  }
+}
+
+.range-controls__toggle {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: @bright-green;
+  padding: 0;
+  top: 27%;
+  left: 10%;
+
+  @media (min-width: @tablet-width) {
+    width: 4px;
+    height: 4px;
+    border: 8px solid @basic-white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 @basic-black;
+    top: 18%;
+    left: 50%;
+  }
+}
+
+.tagline__icon {
+  fill: @dark-black;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.cat-image--slim {
+  width: 36px;
+  height: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 192px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.cat-image--fat {
+  width: 67px;
+  height: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 56px;
+  }
 }

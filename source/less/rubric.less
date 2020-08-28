@@ -14,17 +14,111 @@
   font-family: @font-part;
   font-weight: @normal-weight;
   color: @dark-grey;
-  padding-left: 20px;
+  padding-left: 70px;
   padding-bottom: 24px;
   max-width: 200px;
   font-size: 14px;
   line-height: 1.2;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 1.5;
     max-width: 246px;
     padding-left: 0;
+  }
+}
+
+.rubric__item::before {
+  content: "";
+  position: absolute;
+  background-color: @bright-green;
+  width: 60px;
+  height: 60px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -70%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -20px;
+  }
+}
+
+.rubric__item::after {
+  background-repeat: no-repeat;
+  left: -5px;
+  top: 15px;
+}
+
+.rubric__item:first-child::after {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.rubric__item:nth-child(2)::after {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.rubric__item:nth-child(3)::after {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.rubric__item:last-child::after {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
+.rubric__item--leaf::after {
+  .rubric__phone;
+
+  @media (min-width: @tablet-width) {
+    top: -70%;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "1";
+    .rubric__after;
+  }
+}
+
+.rubric__item--powder::after {
+  .rubric__phone;
+
+  @media (min-width: @tablet-width) {
+    top: -70%;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "2";
+    .rubric__after;
+  }
+}
+
+.rubric__item--supper::after {
+  .rubric__phone;
+
+  @media (min-width: @tablet-width) {
+    top: -70%;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "3";
+    .rubric__after;
+  }
+}
+
+.rubric__item--clock::after {
+  .rubric__phone;
+
+  @media (min-width: @tablet-width) {
+    top: -70%;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "4";
+    .rubric__after;
   }
 }
 
@@ -37,5 +131,11 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+  }
+}
+
+.rubric__item--leaf {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 150px;
   }
 }

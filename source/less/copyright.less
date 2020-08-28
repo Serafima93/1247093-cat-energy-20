@@ -4,13 +4,30 @@
   font-size: 16px;
   line-height: 1;
   color: @dark-grey;
+
+  &active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
+  fill: @dark-brown;
+  width: 40px;
+  height: 40px;
   margin-left: 50px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
     margin-left: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: @bright-green;
+  }
+
+  &:active {
+    fill: @bright-green;
+    opacity: 0.3;
   }
 }
