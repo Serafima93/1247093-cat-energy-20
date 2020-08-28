@@ -37,9 +37,13 @@
   height: 60px;
   left: 0;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
+    top: -70%;
+  }
+
+  @media (min-width: @desktop-width) {
     left: -20px;
   }
 }
@@ -69,6 +73,10 @@
 .rubric__item--leaf::after {
   .rubric__phone;
 
+  @media (min-width: @tablet-width) {
+    top: -70%;
+  }
+
   @media (min-width: @desktop-width) {
     content: "1";
     .rubric__after;
@@ -77,6 +85,10 @@
 
 .rubric__item--powder::after {
   .rubric__phone;
+
+  @media (min-width: @tablet-width) {
+    top: -70%;
+  }
 
   @media (min-width: @desktop-width) {
     content: "2";
@@ -87,6 +99,10 @@
 .rubric__item--supper::after {
   .rubric__phone;
 
+  @media (min-width: @tablet-width) {
+    top: -70%;
+  }
+
   @media (min-width: @desktop-width) {
     content: "3";
     .rubric__after;
@@ -95,6 +111,10 @@
 
 .rubric__item--clock::after {
   .rubric__phone;
+
+  @media (min-width: @tablet-width) {
+    top: -70%;
+  }
 
   @media (min-width: @desktop-width) {
     content: "4";
@@ -111,5 +131,11 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+  }
+}
+
+.rubric__item--leaf {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 150px;
   }
 }
