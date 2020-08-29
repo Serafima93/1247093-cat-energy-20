@@ -1,7 +1,10 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 35px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -10,8 +13,9 @@
 
 .social__item {
   list-style: none;
-  padding-left: 33px;
-  padding-bottom: 43px;
+  padding-left: 36px;
+  padding-bottom: 0;
+  padding-top: 20px;
 
   @media (min-width: @tablet-width) {
     padding-left: 27px;
@@ -34,16 +38,31 @@
 }
 
 .social__link--vkontakte {
-  width: 30px;
-  height: 22px;
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
 }
 
 .social__link--instagram {
-  width: 23px;
-  height: 23px;
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .social__link--facebook {
-  width: 13px;
-  height: 27px;
+  width: 22px;
+  height: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }
