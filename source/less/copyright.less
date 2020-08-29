@@ -4,8 +4,10 @@
   font-size: 16px;
   line-height: 1;
   color: @dark-grey;
+  margin-top: 11px;
+  margin-right: 0;
 
-  &active {
+  &[href]:active {
     opacity: 0.3;
   }
 }
@@ -14,11 +16,11 @@
   fill: @dark-brown;
   width: 40px;
   height: 40px;
-  margin-left: 50px;
+  margin-right: -8px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
-    margin-left: 22px;
+    margin-left: 20px;
   }
 
   &:hover,
@@ -29,5 +31,20 @@
   &:active {
     fill: @bright-green;
     opacity: 0.3;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-right: 50px;
   }
 }
