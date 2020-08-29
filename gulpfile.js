@@ -96,7 +96,7 @@ const html = () => {
 const minjs = () => {
   return gulp.src("source/js/*.js")
     .pipe(uglify())
-    .pipe(rename("sprite.min.js"))
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
 }
 
@@ -131,7 +131,7 @@ const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
   gulp.watch("source/*.html", gulp.series("html"));
-  gulp.watch("source/js/.js", gulp.series("minjs"));
+  gulp.watch("source/js/*.js", gulp.series("minjs"));
 }
 
 exports.styles = styles;
