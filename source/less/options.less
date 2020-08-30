@@ -1,0 +1,82 @@
+.options {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: start;
+}
+
+.options__name {
+  font-size: 24px;
+  line-height: 1;
+  color: @basic-black;
+  padding: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 76px;
+  }
+}
+
+.options__name--additional {
+  margin-bottom: 34px;
+  padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 57px;
+  }
+}
+
+.options__selections {
+  padding-bottom: 13px;
+  color: @dark-grey;
+  font-size: 16px;
+  line-height: 1.1;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.options__selections input {
+  padding-bottom: 13px;
+  color: @dark-grey;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.options__wrap {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.options__communication {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.options__comment {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.1;
+  color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+    min-width: 313px;
+    border: 1px solid @border-color-basic;
+  }
+}

@@ -1,0 +1,122 @@
+.form {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.form__contacts input {
+  text-transform: uppercase;
+}
+
+.form__main {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__options {
+  color: @dark-grey;
+  padding-bottom: 13px;
+}
+
+
+.form__type {
+  color: @special-dark-grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @border-color-basic;
+    max-width: 628px;
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+
+.form__contacts {
+  color: @dark-grey;
+}
+
+.form__comment {
+  color: @dark-grey;
+}
+
+.form__additional {
+  color: @basic-black;
+}
+
+.form__button {
+  text-transform: uppercase;
+  background-color: @bright-green;
+  font-size: 16px;
+  line-height: 1.2;
+  color: @basic-white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 20px;
+    margin-top: 67px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 188px;
+    padding-right: 188px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 20px;
+    margin-top: 74px;
+    margin-bottom: 95px;
+  }
+}
+
+.form__note {
+  font-family: @font-part;
+  text-transform: initial;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.1;
+  color: @basic-black;
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 90px;
+    margin-bottom: 93px;
+    margin-left: 61px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 81px;
+  }
+}
+
+.form__sent {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
