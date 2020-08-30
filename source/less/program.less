@@ -26,28 +26,11 @@
 }
 
 .program__img {
-  position: relative;
-
-  @media (min-width: @tablet-width) {
-    order: 2;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-    max-width: 100px;
-    order: 0;
-  }
-}
-
-.program__img::before {
-  content: "";
-  left: 0;
-  top: 0;
-  position: absolute;
-  background-color: @bright-green;
-  border-radius: 50%;
+  top: 25px;
   width: 50px;
   height: 50px;
+  background: #68b738;
+  border-radius: 50%;
 
   @media (min-width: @tablet-width) {
     width: 200px;
