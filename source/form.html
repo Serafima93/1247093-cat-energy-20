@@ -82,39 +82,40 @@
           </fieldset>
         </div>
         <fieldset class="form__contacts options">
-          <legend class="options__name">Контактные данные (владельца кота)</legend>
+          <legend class="options__name options__name--contact">Контактные данные (владельца кота)</legend>
           <div class="options__communication">
-            <div class="options__selections">
-              <label for="email">Email:*</label>
+            <div class="options__selections options__selections--data">
+              <label for="email" class="options__lable options__lable--data">E-mail:*</label>
               <input type="email" id="email" placeholder="kuklachev@gmail.com"> </div>
-            <div class="options__selections">
-              <label for="phone">Телефон:*</label>
+            <div class="options__selections options__selections--data">
+              <label for="phone" class="options__lable options__lable--data">Телефон:*</label>
               <input type="tel" id="phone" value="8 (960) 900-60-90"> </div>
           </div>
         </fieldset>
         <fieldset class="form__comment options">
-          <legend class="options__name">Комментарий</legend>
-          <textarea name="comment" id="comment-field" rows="10"
-            class="options__comment">Расскажите обо всех повАдках кота</textarea>
+          <legend class="options__name options__name--comment">Комментарий</legend>
+          <textarea name="comment" id="comment-field" rows="7" cols="20"
+            class="options__comment">Расскажите обо всех повадках кота</textarea>
         </fieldset>
+
         <fieldset class="form__additional options">
           <legend class="options__name options__name--additional">Дополнительно</legend>
           <div class="options__wrap">
-            <div class="options__selections">
-              <input type="checkbox" id="sugar" checked>
-              <label for="sugar">сахарозаменитель</label>
+            <div class="options__selections options__selections--components">
+              <input type="checkbox" id="sugar" checked class="visually-hidden ">
+              <label for="sugar" class="options__lable options__lable--components">сахарозаменитель</label>
             </div>
-            <div class="options__selections">
+            <div class="options__selections options__selections--components">
               <input type="checkbox" id="water">
-              <label for="water">питьевая вода</label>
+              <label for="water" class="options__lable options__lable--components">питьевая вода</label>
             </div>
-            <div class="options__selections">
+            <div class="options__selections options__selections--components">
               <input type="checkbox" id="milk">
-              <label for="milk">молоко</label>
+              <label for="milk" class="options__lable options__lable--components">молоко</label>
             </div>
-            <div class="options__selections">
+            <div class="options__selections options__selections--components">
               <input type="checkbox" id="vitamin">
-              <label for="vitamin">витамины</label>
+              <label for="vitamin" class="options__lable options__lable--components">витамины</label>
             </div>
           </div>
         </fieldset>
