@@ -25,10 +25,6 @@
   @media (min-width: @tablet-width) {
     display: block;
   }
-
-  @media (min-width: @desktop-width) {
-    min-height: 431px;
-  }
 }
 
 .product__details-table {
@@ -58,8 +54,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 20px;
+    margin-top: 0;
     padding-left: 53px;
     padding-right: 53px;
   }
+}
+
+.product__img {
+  height: 208px;
+  margin-top: -80px;
+  align-items: flex-end;
+  display: flex;
+}
+
+.product__picture {
+  width: 100%;
 }

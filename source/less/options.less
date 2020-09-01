@@ -6,15 +6,34 @@
   text-align: start;
 }
 
+.options__name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0%;
+  height: 3px;
+  width: 100%;
+  background-color: @bright-green;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+  }
+}
+
+
 .options__name {
   font-size: 24px;
   line-height: 1;
   color: @basic-black;
-  padding: 0;
-  margin-bottom: 32px;
   text-transform: none;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 400;
+  margin: 0;
+  width: auto;
+  position: relative;
+
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -23,8 +42,13 @@
   }
 }
 
+
 .options__name--contact {
   max-width: 187px;
+
+  @media (min-width: @desktop-width) {
+    max-width: 100%;
+  }
 }
 
 .options__name--additional {
@@ -102,7 +126,7 @@
   }
 }
 
-.options__lable--data {
+.options__label--data {
   margin-right: 16px;
   margin-top: 10px;
   max-width: 50%;
@@ -117,7 +141,7 @@
   margin: 0;
 }
 
-.options__lable--program {
+.options__label--program {
   position: relative;
   font-size: 16px;
   display: block;
@@ -125,9 +149,15 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+  }
 }
 
-.options__lable--program::before {
+.options__label--program::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -141,9 +171,9 @@
   transform: translateY(-50%) rotate(45deg);
 }
 
-.options__lable--program::after {
+.options__label--program::after {
   content: "";
-  border: 1px solid #bfbfbf;
+  border: 1px solid @silver;
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -157,6 +187,36 @@
   display: flex;
 }
 
-.options__lable--components {
+.options__label--components {
   width: 100%;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.options__label--components::before {
+  content: "";
+  /*display: none;*/
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  margin-top: -3px;
+  width: 12px;
+  height: 21px;
+  border-right: 1px solid @bright-green;
+  border-bottom: 1px solid @bright-green;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.options__label--components::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  border: 1px solid @border-color-basic;
 }

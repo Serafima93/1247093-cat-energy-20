@@ -1,7 +1,6 @@
 .additional__wrap {
   @media (min-width: @desktop-width) {
     display: flex;
-    flex-direction: row;
     padding-bottom: 86px;
   }
 }
@@ -41,7 +40,7 @@
   @media (min-width: @desktop-width) {
     text-align: center;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
-    color: white;
+    color: @basic-white;
     margin-left: 79px;
     margin-bottom: 86px;
     min-width: 245px;
@@ -67,6 +66,7 @@
   z-index: 2;
   width: 80px;
   height: 83px;
+  transform: translateX(50%);
 }
 
 .additional__cooperation {
