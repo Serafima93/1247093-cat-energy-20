@@ -3,10 +3,15 @@
   outline-offset: -5px;
   display: flex;
   justify-content: space-between;
+  max-width: 140px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 253px;
+    margin: 0 auto;
+  }
 
   @media (min-width: @desktop-width) {
     max-width: 170px;
-    margin: 0 auto;
   }
 }
 
