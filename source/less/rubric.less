@@ -33,6 +33,12 @@
     padding-bottom: 60px;
     max-width: 245px;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .rubric__item::before {
@@ -42,45 +48,52 @@
   width: 60px;
   height: 60px;
   left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: @tablet-width) {
+    position: static;
+    display: block;
     width: 80px;
     height: 80px;
-    top: -40%;
   }
 
   @media (min-width: @desktop-width) {
-    left: -20px;
+    margin-bottom: 35px;
+    margin-right: 20px;
   }
 }
 
-.rubric__item::after {
-  background-repeat: no-repeat;
-  left: -5px;
-  top: 15px;
-}
 
-.rubric__item:first-child::after {
+.rubric__item:first-child::before {
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
-.rubric__item:nth-child(2)::after {
+.rubric__item:nth-child(2)::before {
   background-image: url("../img/advantage-powder@1x.png");
 }
 
-.rubric__item:nth-child(3)::after {
+.rubric__item:nth-child(3)::before {
   background-image: url("../img/advantage-dining@1x.png");
 }
 
-.rubric__item:last-child::after {
+.rubric__item:last-child::before {
   background-image: url("../img/advantage-clock@1x.png");
+}
+
+.rubric__item::after {
+  @media (min-width: @tablet-width) {
+    top: 10%;
+    left: 40%;
+    /*z-index: -1; - почему не работает?? Он полностью исчезает((*/
+  }
 }
 
 .rubric__item--leaf::after {
   .rubric__phone;
 
   @media (min-width: @tablet-width) {
-    top: -40%;
     content: "1";
     .rubric__after;
   }
@@ -90,8 +103,6 @@
   .rubric__phone;
 
   @media (min-width: @tablet-width) {
-    top: -40%;
-
 
     content: "2";
     .rubric__after;
@@ -102,7 +113,6 @@
   .rubric__phone;
 
   @media (min-width: @tablet-width) {
-    top: -40%;
     content: "3";
     .rubric__after;
   }
@@ -112,7 +122,6 @@
   .rubric__phone;
 
   @media (min-width: @tablet-width) {
-    top: -40%;
     content: "4";
     .rubric__after;
   }
@@ -122,5 +131,13 @@
 .rubric__item--clock {
   @media (min-width: @desktop-width) {
     margin: 0;
+  }
+}
+
+.rubric__text {
+  max-width: 176px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 245px;
   }
 }
