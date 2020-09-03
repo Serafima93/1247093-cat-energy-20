@@ -14,6 +14,8 @@
   @media (min-width: @tablet-width) {
     background-image: none;
     background-color: @basic-white;
+    position: relative;
+    min-height: 530px;
   }
 }
 
@@ -80,5 +82,17 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+  }
+}
+
+.introduction__picture {
+  @media (min-width: @tablet-width) {
+    z-index: 0;
+    position: absolute;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 30%;
+    top: 0;
   }
 }
