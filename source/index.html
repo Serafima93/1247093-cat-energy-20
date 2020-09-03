@@ -61,7 +61,8 @@
           <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
-          <img class="introduction__picture" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Продукт для кота">
+          <img class="introduction__picture" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+            alt="Продукт для кота">
         </picture>
 
         <a class="button introduction__btn" href="form.html">Подобрать программу</a>
@@ -146,17 +147,36 @@
           </div>
 
           <div class="example__comparison comparison">
+            <div class="comparison__picture">
+              <div class="comparison__image comparison__image--before">
+                <!--а как делать ссылку на wepb в css?
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                <img class="comparison__image comparison__image--before" src="img/before-mobile@1x.png"
+                  srcset="img/before-mobile@2x.png 2x" alt="Большой кот">
+              </picture>-->
+              </div>
+              <div class="comparison__image comparison__image--after">
+                <!-- <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
 
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Сравнение кота">
-            </picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <img class="comparison__image comparison__image--after" src="img/after-mobile@1x.png"
+                  srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
+              </picture>-->
+              </div>
+            </div>
 
             <div class="comparison__toddler toddler">
               <p class="comparison__time toddler__time">было</p>
