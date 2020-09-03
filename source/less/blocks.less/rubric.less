@@ -24,7 +24,7 @@
   font-size: 14px;
   line-height: 1.2;
   position: relative;
-  margin: 0;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -66,7 +66,6 @@
   }
 }
 
-
 .rubric__item:first-child::before {
   background-image: url("../img/advantage-leaf@1x.png");
 }
@@ -87,7 +86,7 @@
   @media (min-width: @tablet-width) {
     top: 10%;
     left: 40%;
-    /*z-index: -1; - почему не работает?? Он полностью исчезает((*/
+    z-index: -1;
   }
 }
 
