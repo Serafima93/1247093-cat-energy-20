@@ -82,7 +82,9 @@
           </fieldset>
         </div>
         <fieldset class="form__contacts options">
-          <h3 class="options__name options__name--contact">Контактные данные (владельца кота)</h3>
+          <div class="options__title">
+            <h2 class="options__name options__name--contact">Контактные данные (владельца кота)</h2>
+          </div>
           <div class="options__communication">
             <div class="options__selections options__selections--data">
               <label for="email" class="options__label options__label--data">E-mail:*</label>
@@ -93,13 +95,18 @@
           </div>
         </fieldset>
         <fieldset class="form__comment options">
-          <h3 class="options__name options__name--comment">Комментарий</h3>
+          <div class="options__title">
+            <h2 class="options__name options__name--comment">Комментарий</h2>
+          </div>
           <textarea name="comment" id="comment-field" rows="7" cols="20"
             class="options__comment">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
         <fieldset class="form__additional options">
-          <h3 class="options__name options__name--additional">Дополнительно</h3>
+          <div class="options__title">
+
+            <h2 class="options__name options__name--additional">Дополнительно</h2>
+          </div>
           <div class="options__wrap">
             <div class="options__selections options__selections--components">
               <input type="checkbox" id="sugar" checked class="visually-hidden">

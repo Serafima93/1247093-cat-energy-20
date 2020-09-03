@@ -6,11 +6,11 @@
   text-align: start;
 }
 
-.options__name::after {
+.options__title::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0%;
+  top: 0;
   height: 3px;
   width: 100%;
   background-color: @bright-green;
@@ -30,10 +30,13 @@
   padding-left: 40px;
   padding-right: 40px;
   font-weight: 400;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 40px;
+  margin-right: 0;
   width: auto;
-  position: relative;
-
+  display: inline-block;
+  background-color: @basic-white;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -42,26 +45,17 @@
   }
 }
 
+.options__title {
+  position: relative;
+  z-index: 2;
+}
 
 .options__name--contact {
   max-width: 187px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     max-width: 100%;
   }
-}
-
-.options__name--additional {
-  margin-bottom: 34px;
-  padding-top: 27px;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 57px;
-  }
-}
-
-.options__name--comment {
-  padding-top: 27px;
 }
 
 .options__selections--data {
