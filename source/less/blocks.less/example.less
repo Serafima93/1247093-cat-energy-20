@@ -1,5 +1,13 @@
 .example {
-  background-color: @neutral;
+  background-color: @change-color;
+
+  @media (min-width: @tablet-width) {
+    background-image: linear-gradient(to right, #f2f2f2 50%, #FFFFFF);
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, #f2f2f2 67.1%, #FFFFFF);
+  }
 }
 
 .example__title {
