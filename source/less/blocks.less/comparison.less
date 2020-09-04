@@ -14,7 +14,8 @@
   }
 }
 
-.comparison__time {
+.comparison__button {
+  font-family: @font-full;
   color: @basic-black;
   text-transform: uppercase;
   text-align: center;
@@ -22,16 +23,26 @@
   line-height: 1.2;
   margin-top: 27px;
   margin-bottom: 31px;
+  border: none;
+  background: transparent;
+  width: auto;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1.5;
-    border-bottom: 1px dashed @basic-black;
+    border-bottom: 1px dotted @basic-black;
     margin-bottom: 68px;
+    padding: 0;
+    height: fit-content;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
+  }
+
+  &:hover {
+    border-bottom: 1px solid @basic-black;
   }
 }
 
@@ -50,6 +61,7 @@
   @media (min-width: @desktop-width) {
     height: 536px;
     margin-top: -190px;
+    margin-right: 50px;
   }
 }
 

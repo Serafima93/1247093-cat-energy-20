@@ -1,5 +1,10 @@
 .toddler {
   display: flex;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 47px;
+    margin-left: 40px;
+  }
 }
 
 .toddler__range-controls {
@@ -14,7 +19,7 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     height: 41px;
-    padding-top: 19px;
+    padding-top: 15px;
     border-radius: 5px;
   }
 }
@@ -32,7 +37,14 @@
     background-color: @milk-color;
     width: 428px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: -3px;
+  }
 }
+
 
 .toddler__toggle {
   position: absolute;
@@ -45,13 +57,22 @@
   left: 10%;
 
   @media (min-width: @tablet-width) {
-    width: 4px;
-    height: 4px;
-    border: 8px solid @basic-white;
+    width: 8px;
+    height: 8px;
+    border: 12px solid @basic-white;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 2px 2px 0 @basic-black;
-    top: 18%;
-    left: 50%;
+    top: 1%;
+    left: 47%;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    border:  0 3px 3px 1px @bright-green;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.25); 
   }
 }
