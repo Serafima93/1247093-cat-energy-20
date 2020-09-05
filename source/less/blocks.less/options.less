@@ -43,12 +43,24 @@
     line-height: 1;
     margin-bottom: 76px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    margin-left: 0;
+  }
 }
 
 .options__title {
   position: relative;
   z-index: 2;
 }
+
+.options__title--contact {
+  @media (min-width: @desktop-width) {
+    margin-top: 12px;
+  }
+}
+
 
 .options__name--contact {
   max-width: 187px;
@@ -66,7 +78,8 @@
   display: flex;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    margin-bottom: 19px;
     font-size: 20px;
     line-height: 1.5;
     width: 100%;
@@ -81,6 +94,15 @@
   padding: 10px 15px 12px;
   width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .options__wrap {
@@ -121,7 +143,7 @@
 }
 
 .options__label--data {
-  margin-right: 16px;
+  margin-right: 26px;
   margin-top: 10px;
   max-width: 50%;
   flex-shrink: 0;
@@ -213,4 +235,10 @@
   width: 26px;
   height: 26px;
   border: 1px solid @border-color-basic;
+}
+
+.options__name--additional {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
 }
