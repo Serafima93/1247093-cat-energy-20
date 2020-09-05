@@ -10,6 +10,11 @@
   &[href]:active {
     opacity: 0.3;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 9px;
+  }
 }
 
 .copyright__logo {
@@ -44,7 +49,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -3px;
+    margin-top: -7px;
     margin-right: 50px;
+  }
+}
+
+.copyright__brand {
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
   }
 }
