@@ -18,15 +18,19 @@
 
 .subject__link::after {
   content: "";
-  right: -55px;
-  top: 10px;
+  right: -45px;
+  top: 7px;
   position: absolute;
   width: 28px;
   height: 10px;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
-}
 
+  @media (min-width: @desktop-width) {
+    right: -55px;
+    top: 10px;
+  }
+}
 .subject__link:hover::after {
   background-image: url("../img/icon-right-arrow-verylong.svg");
   background-repeat: no-repeat;

@@ -22,7 +22,7 @@
   font-family: @font-part;
   font-weight: @normal-weight;
   color: @dark-grey;
-  padding-left: 70px;
+  padding-left: 80px;
   padding-bottom: 24px;
   max-width: 200px;
   font-size: 14px;
@@ -53,7 +53,7 @@
   width: 60px;
   height: 60px;
   left: 0;
-  top: 0;
+  top: -1px;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -62,6 +62,7 @@
     display: block;
     width: 80px;
     height: 80px;
+    top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -140,9 +141,14 @@
 }
 
 .rubric__text {
-  max-width: 176px;
+  max-width: 200px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 6px;
 
   @media (min-width: @tablet-width) {
     max-width: 245px;
+    margin: auto;
   }
 }

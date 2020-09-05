@@ -4,16 +4,19 @@
   font-size: 16px;
   line-height: 1;
   color: @dark-grey;
-  margin-top: 11px;
+  margin-top: -2px;
   margin-right: 0;
+  display: flex;
+  min-width: 250px;
+  justify-content: space-between;
 
   &[href]:active {
     opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
-    display: flex;
     margin-top: 9px;
+    justify-content: start;
   }
 }
 
@@ -22,9 +25,11 @@
   width: 40px;
   height: 40px;
   margin-right: -8px;
+  margin-top: 6px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
+    margin-top: 0;
     margin-left: 20px;
   }
 
@@ -55,6 +60,9 @@
 }
 
 .copyright__brand {
+  margin-left: 0;
+  margin-right: 0;
+
   @media (min-width: @desktop-width) {
     margin-top: 10px;
   }
