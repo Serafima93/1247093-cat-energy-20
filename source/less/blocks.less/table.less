@@ -1,6 +1,4 @@
 .table {
-  padding-bottom: 22px;
-
   @media (min-width: @tablet-width) {
     padding-bottom: 33px;
     margin: 0;
@@ -19,6 +17,10 @@
   font-size: 16px;
   line-height: 1.2;
   max-width: 76px;
+  margin-left: 3px;
+  margin-bottom: 15px;
+  margin-top: 18px;
+  text-align: start;
 
   @media (min-width: @tablet-width) {
     padding-top: 34px;
@@ -26,6 +28,7 @@
     font-size: 20px;
     max-width: 140px;
     margin: 0 auto;
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,5 +36,13 @@
     line-height: 1;
     padding-top: 36px;
     max-width: 145px;
+  }
+}
+
+.table__parameters {
+  margin-left: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
   }
 }
