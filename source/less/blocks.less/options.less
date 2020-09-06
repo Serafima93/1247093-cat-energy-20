@@ -159,29 +159,6 @@
   }
 }
 
-.options__label--program {
-  position: relative;
-  font-size: 16px;
-  display: block;
-  padding-left: 45px;
-  padding-top: 10px;
-  margin-bottom: 5px;
-  cursor: pointer;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 10px;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 20px;
-    line-height: 1.5;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 62px;
-    margin-bottom: 0;
-  }
-}
-
 .options__selections--components {
   display: flex;
 }
@@ -272,10 +249,24 @@
 }
 
 .options__label--program {
-  cursor: pointer;
   position: relative;
+  font-size: 16px;
+  display: block;
+  padding-left: 45px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
+  }
 
   @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 62px;
     margin-bottom: 2px;
   }
 }
@@ -284,6 +275,6 @@
   display: none;
 }
 
-.options__input:checked+.options__label--program::after {
+.options__input:checked + .options__label--program::after {
   display: block;
 }
