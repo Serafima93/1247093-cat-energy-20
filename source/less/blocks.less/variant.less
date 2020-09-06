@@ -5,6 +5,13 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: -3px;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
   }
 }
 
@@ -40,9 +47,15 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
-    min-width: 290px;
-    margin: auto;
+    min-width: 182px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
+@media (min-width: @desktop-width) {
+
+  min-width: 290px;
+  margin: auto;
+}
 }
 
 .variant__parameters {
