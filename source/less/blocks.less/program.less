@@ -43,7 +43,7 @@
     width: 200px;
     height: 200px;
     position: static;
-    margin-top: 17px;
+    margin-top: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -91,7 +91,7 @@
 .program__title--gain {
   margin-left: 54px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin-left: 0;
   }
 }
@@ -121,6 +121,26 @@
     padding: 0;
     margin-left: 23px;
     max-width: 567px;
+  }
+}
+
+.program__text--gain {
+  @media (min-width: @tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 377px;
+  }
+}
+
+.program__img--fat {
+  @media (min-width: @tablet-width) {
+    margin-left: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 

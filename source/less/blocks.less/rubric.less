@@ -5,7 +5,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 40px 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,9 +33,9 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    padding-top: 31px;
+    padding-top: 30px;
     padding-left: 0;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     max-width: 245px;
   }
 
@@ -90,7 +90,14 @@
 .rubric__item::after {
   @media (min-width: @tablet-width) {
     top: 5%;
-    left: 47%;
+    left: 46%;
+    z-index: -1;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 5%;
+    left: 48%;
     z-index: -1;
     font-family: "Oswald", "Arial", sans-serif;
   }
@@ -150,5 +157,10 @@
   @media (min-width: @tablet-width) {
     max-width: 245px;
     margin: auto;
+    padding-top: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
   }
 }
