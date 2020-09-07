@@ -12,9 +12,23 @@
   left: 0;
   top: 0;
   height: 3px;
-  width: 100%;
+  width: 103%;
   background-color: @bright-green;
   z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+  }
+}
+
+.options__title::after {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 0;
+  height: 3px;
+  width: 5%;
+  background-color: @bright-green;
 
   @media (min-width: @tablet-width) {
     margin-top: 22px;
@@ -127,6 +141,7 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    width: 1300px;
   }
 }
 
@@ -197,20 +212,24 @@
 .options__label--components {
   width: 100%;
   position: relative;
-  padding-left: 45px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 5px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 18px;
+    padding-left: 57px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
 }
 
 .options__label--components::after {
   content: "";
   position: absolute;
-  left: 9px;
+  left: 15px;
   top: 50%;
   margin-top: -3px;
-  width: 12px;
-  height: 21px;
+  width: 8px;
+  height: 13px;
   border-right: 1px solid @bright-green;
   border-bottom: 1px solid @bright-green;
   transform: translateY(-50%) rotate(45deg);
@@ -223,8 +242,8 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 26px;
-  height: 26px;
+  width: 38px;
+  height: 38px;
   border: 1px solid @border-color-basic;
 }
 
@@ -236,13 +255,19 @@
   display: none;
 }
 
-.options__components-input:checked + .options__label--components::after {
+.options__components-input:checked+.options__label--components::after {
   display: block;
 }
 
 .options__name--additional {
   @media (min-width: @desktop-width) {
     margin-bottom: 58px;
+  }
+}
+
+.options__title--additional {
+  @media (min-width: @desktop-width) {
+    margin-bottom: -6px;
   }
 }
 
@@ -318,7 +343,7 @@
   display: none;
 }
 
-.options__input:checked + .options__label--program::after {
+.options__input:checked+.options__label--program::after {
   display: block;
 }
 
