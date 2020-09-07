@@ -17,6 +17,11 @@
 
 .form__contacts input {
   text-transform: uppercase;
+  margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .form__main {
@@ -29,10 +34,11 @@
 
 .form__options {
   color: @dark-grey;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 
   @media (min-width: @desktop-width) {
     width: 570px;
+    padding-bottom: 13px;
   }
 }
 
@@ -57,14 +63,18 @@
 
 .form__contacts {
   color: @dark-grey;
+  margin-top: 55px;
+  margin-bottom: 14px;
 
   @media (min-width: @desktop-width) {
     margin-bottom: 64px;
+    margin-top: 0;
   }
 }
 
 .form__comment {
   color: @dark-grey;
+  margin-bottom: 37px;
 
   @media (min-width: @desktop-width) {
     margin-bottom: 68px;
@@ -83,14 +93,15 @@
   line-height: 1.2;
   color: @basic-white;
   padding: 10px;
-  width: 250px;
+  width: 278px;
   border: none;
   text-align: center;
-  margin-top: 34px;
+  margin-top: 30px;
   margin-bottom: 21px;
   height: fit-content;
 
   @media (min-width: @tablet-width) {
+    width: 250px;
     padding: 15px;
     font-size: 20px;
     margin-top: 67px;

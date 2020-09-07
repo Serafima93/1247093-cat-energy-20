@@ -11,27 +11,32 @@
   position: absolute;
   left: 0;
   top: 0;
-  height: 3px;
-  width: 103%;
+  top: 27%;
+  height: 2px;
+  width: 107%;
   background-color: @bright-green;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
+    height: 3px;
     margin-top: 22px;
+    width: 103%;
+    left: 0;
+    top: 0;
   }
 }
 
 .options__title::after {
   content: "";
   position: absolute;
-  left: -8%;
-  top: 0;
-  height: 3px;
-  width: 5%;
-  background-color: @bright-green;
 
   @media (min-width: @tablet-width) {
     margin-top: 22px;
+    left: -8%;
+    top: 0;
+    height: 3px;
+    width: 5%;
+    background-color: @bright-green;
   }
 }
 
@@ -40,26 +45,25 @@
   line-height: 1;
   color: @basic-black;
   text-transform: none;
-  padding-left: 40px;
-  padding-right: 40px;
   font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 40px;
-  margin-right: 0;
   width: auto;
   display: inline-block;
   background-color: @basic-white;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 1;
     margin-bottom: 76px;
+    margin-left: 40px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
     margin-left: 0;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -76,6 +80,11 @@
 
 .options__name--contact {
   max-width: 187px;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 12px;
 
   @media (min-width: @tablet-width) {
     max-width: 100%;
@@ -83,7 +92,7 @@
 }
 
 .options__selections--data {
-  padding-bottom: 13px;
+  padding-bottom: 14px;
   color: @dark-grey;
   font-size: 16px;
   line-height: 1.1;
@@ -119,7 +128,10 @@
   font-size: 16px;
   line-height: 1.1;
   border: 1px solid @grey;
-  padding: 10px 15px 12px;
+  padding-top: 13px;
+  padding-right: 15px;
+  padding-bottom: 13px;
+  padding-left: 15px;
   width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
 
@@ -134,9 +146,12 @@
 }
 
 .options__wrap {
+  margin-top: 30px;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -146,6 +161,8 @@
 }
 
 .options__communication {
+  padding-top: 33px;
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -159,11 +176,13 @@
   line-height: 1.1;
   color: @dark-grey;
   border: 1px solid @grey;
-  width: 100%;
+  width: 251px;
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   padding: 0;
   resize: none;
+  height: 123px;
+  padding: 13px 14px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -179,27 +198,56 @@
   }
 }
 
+.options__name--comment {
+  margin-bottom: 34px;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 20px;
+  margin-top: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .options__label {
-  line-height: 1.5;
-  font-size: 20px;
+  line-height: 18px;
+  font-size: 16px;
+
+  @media (min-width: @desktop-width) {
+    line-height: 1.5;
+    font-size: 20px
+  }
 }
 
 .options__label--data {
-  margin-right: 26px;
-  margin-top: 10px;
-  max-width: 50%;
   flex-shrink: 0;
+  margin-right: 21px;
+  margin-top: 15px;
+  margin-top: 13px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 26px;
+    margin-top: 10px;
+    max-width: 50%;
+  }
 }
 
 .options__label--communication {
+  flex-shrink: 0;
+  margin-top: 12px;
+  padding-right: 11px;
+
   @media (min-width: @desktop-width) {
-    flex-shrink: 0;
     margin-top: 10px;
     padding-right: 21px;
   }
 }
 
 .options__label--age {
+  margin-right: 14px;
+
   @media (min-width: @desktop-width) {
     margin-right: 18px;
   }
@@ -207,11 +255,19 @@
 
 .options__selections--components {
   display: flex;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 18px;
+  }
 }
 
 .options__label--components {
   width: 100%;
   position: relative;
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 4px;
 
   @media (min-width: @desktop-width) {
     margin-right: 18px;
@@ -242,9 +298,15 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   border: 1px solid @border-color-basic;
+
+
+  @media (min-width: @desktop-width) {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .options__components-input {
@@ -260,8 +322,15 @@
 }
 
 .options__name--additional {
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 22px;
+  margin-top: -20px;
+
   @media (min-width: @desktop-width) {
     margin-bottom: 58px;
+    margin-top: 0;
   }
 }
 
@@ -278,12 +347,17 @@
 }
 
 .options__fieldset {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid @form-silver;
+  border-bottom: 1px solid @form-silver;
+
+
   @media (min-width: @desktop-width) {
     border: 1px solid @form-silver;
     padding-left: 25px;
     padding-bottom: 18px;
     padding-right: 25px;
-    margin: 0;
     padding-top: 22px;
   }
 }
@@ -292,13 +366,16 @@
   position: relative;
   font-size: 16px;
   display: block;
-  padding-left: 45px;
-  padding-top: 10px;
   margin-bottom: 5px;
   cursor: pointer;
+  padding-left: 43px;
+  margin-bottom: 2px;
+  padding-top: 23px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -314,16 +391,23 @@
 .options__label--program::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   border: none;
   background: @bright-green;
   margin-top: 0;
-  left: 12px;
-  top: 24px;
+  left: 9px;
+  top: 33px;
   transform: translateY(-50%) rotate(45deg);
   display: none;
+
+  @media (min-width: @desktop-width) {
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    top: 24px;
+  }
 }
 
 .options__label--program::before {
@@ -331,12 +415,19 @@
   border: 1px solid @silver;
   border-radius: 50%;
   position: absolute;
-  left: 0;
-  top: 50%;
+  left: 0%;
+  top: 83%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   display: block;
+
+  @media (min-width: @desktop-width) {
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 50%;
+  }
 }
 
 .options__fieldset input[type="radio"] {
@@ -356,11 +447,21 @@
 }
 
 .options__icon--phone {
-  left: 90%;
-  bottom: 53.5%;
+  left: 76%;
+  bottom: -92%;
+
+  @media (min-width: @desktop-width) {
+    left: 90%;
+    bottom: 53.5%;
+  }
 }
 
 .options__icon--mail {
-  left: 44.5%;
-  bottom: 53.5%;
+  left: 76%;
+  bottom: -76%;
+
+  @media (min-width: @desktop-width) {
+    left: 44.5%;
+    bottom: 53.5%;
+  }
 }
