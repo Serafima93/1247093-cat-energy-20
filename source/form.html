@@ -82,12 +82,20 @@
             <h2 class="options__name options__name--contact">Контактные данные (владельца кота)</h2>
           </div>
           <div class="options__communication">
-            <div class="options__selections options__selections--data">
-              <label for="email" class="options__label options__label--data">E-mail:*</label>
-              <input type="email" id="email" placeholder="kuklachev@gmail.com"> </div>
-            <div class="options__selections options__selections--data">
-              <label for="phone" class="options__label options__label--data">Телефон:*</label>
-              <input type="tel" id="phone" value="8 (960) 900-60-90"> </div>
+            <div class="options__selections options__selections--communication">
+              <label for="email" class="options__label options__label--communication">E-mail:*</label>
+              <input type="email" id="email" placeholder="kuklachev@gmail.com" class="options__communication-input">
+              <svg width="20" height="13" class="options__icon options__icon--mail">
+                <use xlink:href="img/sprite.svg#icon-mail "></use>
+              </svg>
+             </div>
+            <div class="options__selections options__selections--communication">
+              <label for="phone" class="options__label options__label--communication">Телефон:*</label>
+              <input type="tel" id="phone" value="8 (960) 900-60-90" class="options__communication-input">
+              <svg width="19" height="20" class="options__icon options__icon--phone">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+             </div>
           </div>
         </fieldset>
         <fieldset class="form__comment options">
@@ -100,24 +108,24 @@
 
         <fieldset class="form__additional options">
           <div class="options__title options__title--additional">
-
             <h2 class="options__name options__name--additional">Дополнительно</h2>
           </div>
+
           <div class="options__wrap">
             <div class="options__selections options__selections--components">
-              <input type="checkbox" id="sugar" checked class="visually-hidden">
+              <input type="checkbox" id="sugar" checked class="options__components-input">
               <label for="sugar" class="options__label options__label--components">сахарозаменитель</label>
             </div>
             <div class="options__selections options__selections--components">
-              <input type="checkbox" id="water" class="visually-hidden">
+              <input type="checkbox" id="water" class="options__components-input">
               <label for="water" class="options__label options__label--components">питьевая вода</label>
             </div>
             <div class="options__selections options__selections--components">
-              <input type="checkbox" id="milk" class="visually-hidden">
+              <input type="checkbox" id="milk" class="options__components-input">
               <label for="milk" class="options__label options__label--components">молоко</label>
             </div>
             <div class="options__selections options__selections--components">
-              <input type="checkbox" id="vitamin" class="visually-hidden">
+              <input type="checkbox" id="vitamin" class="options__components-input">
               <label for="vitamin" class="options__label options__label--components">витамины</label>
             </div>
           </div>
