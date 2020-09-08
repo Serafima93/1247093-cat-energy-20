@@ -179,7 +179,8 @@
   }
 }
 
-.options__selections input:hover {
+.options__selections input:hover,
+:focus {
   border: 1px solid @border-neutral;
 }
 
@@ -469,6 +470,15 @@
   }
 }
 
+.options__label--program:hover,
+:focus {
+  opacity: 0.7;
+}
+
+.options__label--program:active {
+  opacity: 0.3;
+}
+
 .options__label--program::after {
   content: "";
   position: absolute;
@@ -531,10 +541,21 @@
   border: 1px solid @change-silver-color;
 }
 
+.options__label--program:focus::before,
+.options__label--components:focus::before {
+  border: 1px solid @change-silver-color;
+}
+
 .options__label--program:active::before,
 .options__label--components:active::before {
   border: 1px solid @change-silver-color;
   opacity: 0.3;
+}
+
+.options__label--program:disabled::before,
+.options__label--components:disabled::before {
+  border: 1px solid @grey;
+  opacity: 0.7;
 }
 
 .options__fieldset input[type="radio"] {
