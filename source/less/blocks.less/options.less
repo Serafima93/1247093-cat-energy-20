@@ -262,7 +262,7 @@
   position: relative;
   padding-left: 45px;
   padding-top: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 14px;
 
   @media (min-width: @desktop-width) {
     margin-right: 18px;
@@ -276,8 +276,9 @@
 .options__label--components::after {
   content: "";
   position: absolute;
-  left: 15px;
-  top: 50%;
+  left: 11px;
+  top: 67%;
+
   margin-top: -3px;
   width: 8px;
   height: 13px;
@@ -285,13 +286,18 @@
   border-bottom: 1px solid @bright-green;
   transform: translateY(-50%) rotate(45deg);
   display: none;
+
+  @media (min-width: @desktop-width) {
+    left: 15px;
+    top: 50%;
+  }
 }
 
 .options__label--components::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 74%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
@@ -299,6 +305,7 @@
 
 
   @media (min-width: @desktop-width) {
+    top: 50%;
     width: 38px;
     height: 38px;
   }
@@ -440,8 +447,8 @@
 }
 
 .options__icon--phone {
-  left: 76%;
-  bottom: -92%;
+  left: 77%;
+  bottom: -93%;
 
   @media (min-width: @desktop-width) {
     left: 90%;
@@ -451,7 +458,7 @@
 
 .options__icon--mail {
   left: 76%;
-  bottom: -76%;
+  bottom: -78%;
 
   @media (min-width: @desktop-width) {
     left: 44.5%;
