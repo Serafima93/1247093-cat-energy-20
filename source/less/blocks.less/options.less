@@ -496,7 +496,7 @@
   }
 }
 
-.options__label--program:active:after {
+.options__label--program:active::after {
   opacity: 0.3;
 }
 
@@ -526,13 +526,13 @@
   }
 }
 
-.options__label--program:hover:before,
-.options__label--components:hover:before {
+.options__label--program:hover::before,
+.options__label--components:hover::before {
   border: 1px solid @change-silver-color;
 }
 
-.options__label--program:active:before,
-.options__label--components:active:before {
+.options__label--program:active::before,
+.options__label--components:active::before {
   border: 1px solid @change-silver-color;
   opacity: 0.3;
 }
