@@ -70,15 +70,19 @@
 }
 
 .site-list__item--active .site-list__link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 100%;
-  height: 2px;
-  background-color: @bright-green;
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background-color: @bright-green;
+  }
 }
 
 .site-list__item--active .site-list__link--home::before {
-  background-color: @basic-white;
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+  }
 }
