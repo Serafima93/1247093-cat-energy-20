@@ -12,6 +12,14 @@
 .page-main__wrapper {
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
+  margin-top: -10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.page-main__wrapper--index {
   margin-top: 3px;
 
   @media (min-width: @tablet-width) {
