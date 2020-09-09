@@ -79,6 +79,7 @@
 .options__title {
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .options__title--contact {
@@ -432,7 +433,10 @@
 }
 
 .options__fieldset {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   border-left: none;
   border-right: none;
   border-top: 1px solid @form-silver;
@@ -443,6 +447,8 @@
   padding-top: 13px;
 
   @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
     border: 1px solid @form-silver;
     padding-left: 25px;
     padding-bottom: 18px;
@@ -451,6 +457,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     padding-left: 25px;
     padding-bottom: 18px;
     padding-right: 25px;
