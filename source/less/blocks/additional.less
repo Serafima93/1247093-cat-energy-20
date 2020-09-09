@@ -13,29 +13,6 @@
   }
 }
 
-.additional__title {
-  text-align: start;
-  font-size: 24px;
-  line-height: 1;
-  color: @basic-black;
-  margin-top: 28px;
-  margin-bottom: 34px;
-  font-weight: 400;
-
-  @media (min-width: @tablet-width) {
-    font-size: 36px;
-    margin-top: 68px;
-    margin-bottom: 80px;
-    margin-left: 38px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 40px;
-    margin-bottom: 78px;
-    margin-left: 0;
-  }
-}
-
 .additional__gift {
   text-align: center;
   position: relative;
@@ -154,5 +131,94 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     display: none;
+  }
+}
+
+.additional__title {
+  text-align: start;
+  font-size: 24px;
+  line-height: 1;
+  color: @basic-black;
+  margin-top: 28px;
+  margin-bottom: 34px;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    margin-top: 68px;
+    margin-bottom: 80px;
+    margin-left: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 38px;
+    margin-bottom: 80px;
+    margin-left: 0;
+  }
+}
+
+.additional__name {
+  font-size: 24px;
+  line-height: 1;
+  color: @basic-black;
+  text-transform: none;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  background-color: @basic-white;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.additional__title::before {
+  content: "";
+  position: absolute;
+  left: 83%;
+  top: 63.7%;
+  height: 2px;
+  width: 17%;
+  background-color: @bright-green;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    height: 3px;
+    width: 43%;
+    left: 57%;
+    top: 67.4%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 78%;
+    left: 22%;
+    top: 74.5%;
+  }
+}
+
+.additional__title::after {
+  content: "";
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+    left: 0;
+    top: 66.8%;
+    height: 3px;
+    width: 4%;
+    background-color: @bright-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0%;
+    top: 73%;
   }
 }
