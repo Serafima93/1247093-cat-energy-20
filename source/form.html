@@ -56,13 +56,13 @@
           <fieldset class="form__options options">
             <div class="options__selections options__selections--data">
               <label for="name" class="options__label options__label--data">ИМЯ:</label>
-              <input type="text" id="name" value="БАРСИК"> </div>
+              <input type="text" id="name" placeholder="БАРСИК"> </div>
             <div class="options__selections options__selections--data">
               <label for="volume" class="options__label options__label--data">Вес (кг):</label>
-              <input type="text" id="volume" value="7"> </div>
+              <input type="text" id="volume" placeholder="7"> </div>
             <div class="options__selections options__selections--data">
               <label for="age" class="options__label options__label--data options__label--age">Возраст (лет):</label>
-              <input type="text" id="age" value="7"> </div>
+              <input type="text" id="age" placeholder="7"> </div>
           </fieldset>
 
           <div class="form__type options">
@@ -91,7 +91,7 @@
             </div>
             <div class="options__selections options__selections--communication">
               <label for="phone" class="options__label options__label--communication">Телефон:*</label>
-              <input type="tel" id="phone" value="8 (960) 900-60-90" class="options__communication-input">
+              <input type="tel" id="phone" placeholder="8 (960) 900-60-90" class="options__communication-input">
               <svg width="19" height="20" class="options__icon options__icon--phone">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -136,17 +136,19 @@
         </div>
       </form>
       <section class="form__cooperation cooperation">
-        <div class="cooperation__text"> приглашаем<br> к сотрудничеству дилеров! </div>
-        <div class="cooperation__address"> ул. Большая Конюшенная, д. 19/8
+        <p class="cooperation__text"> приглашаем<br> к сотрудничеству дилеров! </p>
+        <p class="cooperation__address"> ул. Большая Конюшенная, д. 19/8
           <span class="cooperation__city">Санкт-Петербург</span>
-        </div>
+        </p>
       </section>
     </div>
   </main>
-  <iframe class="iframe__map"
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2970836258144!2d30.3219997!3d59.9388761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1526233818772"
-    style="border: 0" allowfullscreen title="Карта, чтобы найти магазин">
-  </iframe>
+  <div class="container container-iframe">
+    <iframe class="iframe__map"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2970836258144!2d30.3219997!3d59.9388761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1526233818772"
+      allowfullscreen title="Магазин. ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+    </iframe>
+  </div>
 
   <footer class="container page__footer">
     <div class="page-footer__wrapper">

@@ -21,3 +21,33 @@
     background-image: url("../img/index-background-desktop@2x.jpg");
   }
 }
+
+.container-iframe {
+  padding: 0;
+  position: relative;
+}
+
+.container-iframe::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/map-pin.png");
+  background-repeat: no-repeat;
+  left: 42%;
+  top: 38%;
+  width: 63px;
+  height: 87px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-pin-big.png");
+    width: 113px;
+    height: 106px;
+    left: 43%;
+    top: 36%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 63%;
+    top: 32%;
+  }
+}
