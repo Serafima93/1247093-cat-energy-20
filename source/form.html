@@ -82,14 +82,14 @@
             <h2 class="options__name options__name--contact">Контактные данные (владельца кота)</h2>
           </div>
           <div class="options__communication">
-            <div class="options__selections options__selections--communication">
+            <div class="options__selections options__selections-communication  options__selections--mail ">
               <label for="email" class="options__label options__label--communication">E-mail:*</label>
               <input type="email" id="email" placeholder="kuklachev@gmail.com" class="options__communication-input">
               <svg width="20" height="13" class="options__icon options__icon--mail">
                 <use xlink:href="img/sprite.svg#icon-mail "></use>
               </svg>
             </div>
-            <div class="options__selections options__selections--communication">
+            <div class="options__selections options__selections-communication">
               <label for="phone" class="options__label options__label--communication">Телефон:*</label>
               <input type="tel" id="phone" placeholder="8 (960) 900-60-90" class="options__communication-input">
               <svg width="19" height="20" class="options__icon options__icon--phone">
@@ -135,12 +135,14 @@
           <p class="form__note">* — Обязательные поля</p>
         </div>
       </form>
-      <section class="form__cooperation cooperation">
-        <p class="cooperation__text"> приглашаем<br> к сотрудничеству дилеров! </p>
-        <p class="cooperation__address"> ул. Большая Конюшенная, д. 19/8
-          <span class="cooperation__city">Санкт-Петербург</span>
-        </p>
-      </section>
+      <div class="form__wrap">
+        <section class="form__cooperation cooperation">
+          <p class="cooperation__text"> приглашаем<br> к сотрудничеству дилеров! </p>
+          <p class="cooperation__address"> ул. Большая Конюшенная, д. 19/8
+            <span class="cooperation__city">Санкт-Петербург</span>
+          </p>
+        </section>
+      </div>
     </div>
   </main>
   <div class="container container-iframe">
