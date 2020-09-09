@@ -4,7 +4,8 @@
   margin-left: 20px;
 
   @media (min-width: @tablet-width) {
-    background-image: linear-gradient(to right, #f2f2f2 50%, #ffffff);
+    background-color: @basic-white;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,6 +17,11 @@
   margin-left: -20px;
   margin-right: -20px;
   background-color: @change-color;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+    margin: 0;
+  }
 }
 
 .example__title {
@@ -89,5 +95,14 @@
     position: absolute;
     left: 7.5%;
     top: 104.5%;
+  }
+}
+
+.example__article {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 220px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
