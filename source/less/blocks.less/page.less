@@ -10,8 +10,6 @@
 }
 
 .page-main__wrapper {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   margin-top: -10px;
 
   @media (min-width: @tablet-width) {
@@ -20,7 +18,7 @@
 }
 
 .page-main__wrapper--index {
-  margin-top: 3px;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
@@ -29,4 +27,9 @@
 
 .page__footer {
   background-color: @neutral;
+  margin-top: -3px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -4px;
+  }
 }
