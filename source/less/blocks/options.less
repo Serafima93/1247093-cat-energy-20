@@ -147,22 +147,25 @@
   font-size: 16px;
   line-height: 1.1;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   width: 100%;
 
   @media (min-width: @desktop-width) {
-    width: 570px;
+    width: 46%;
   }
 }
 
 .options__selections--mail {
   @media (min-width: @desktop-width) {
-    margin-right: 62px;
+    margin-right: 76px;
   }
 }
 
 .options__selections--phone {
   @media (min-width: @desktop-width) {
     margin-right: 73px;
+    margin-left: 0px;
   }
 }
 
@@ -234,7 +237,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-right: 72px;
     padding-top: 75px;
   }
