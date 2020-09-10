@@ -38,6 +38,16 @@
   font-size: 16px;
   text-align: center;
 
+  &:hover,
+  &:focus {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    background-color: @green-hover;
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     padding-left: 70px;
     padding-right: 70px;

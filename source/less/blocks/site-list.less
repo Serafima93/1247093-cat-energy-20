@@ -54,6 +54,10 @@
   }
 }
 
+.site-list__link:visited {
+  color: @basic-black;
+}
+
 .site-list__link:hover,
 :focus {
   opacity: 0.6;
@@ -68,6 +72,13 @@
     color: @basic-white;
   }
 }
+
+.site-list__link--home:visited {
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+  }
+}
+
 
 .site-list__item--active .site-list__link::before {
   @media (min-width: @tablet-width) {
