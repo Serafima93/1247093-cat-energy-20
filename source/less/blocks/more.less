@@ -1,0 +1,74 @@
+.more {
+  text-align: center;
+  padding-bottom: 30px;
+  border-top: 2px solid @neutral;
+  border-bottom: 2px solid @neutral;
+  padding-top: 31px;
+  max-height: 190px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 53px;
+    border: 2px solid @neutral;
+    min-height: 373px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+    max-width: 245px;
+    min-height: 433px;
+  }
+}
+
+.more__button {
+  background-color: @neutral;
+  color: @dark-grey;
+  font-size: 16px;
+  padding-right: 93px;
+  padding-bottom: 7px;
+  padding-left: 93px;
+  padding-top: 8px;
+
+  &:hover,
+  &:focus {
+    background-color: @border-grey;
+  }
+
+  &:active {
+    background-color: @border-grey;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 37px;
+    padding-right: 40px;
+    font-size: 16px;
+    padding-bottom: 7px;
+  }
+}
+
+.more__picture {
+  width: 30px;
+  height: 30px;
+  color: @white-grey;
+  opacity: 0.3;
+  margin-top: -8px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 32px;
+  }
+}

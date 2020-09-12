@@ -1,0 +1,29 @@
+.container-mix () {
+  margin: 0 auto;
+  width: @mobile-width;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 40px;
+  }
+}
+
+//Rubric
+.rubric__after {
+  color: @neutral;
+  font-size: 281px;
+  line-height: 235px;
+}
+
+.rubric__phone {
+  position: absolute;
+  content: "";
+}

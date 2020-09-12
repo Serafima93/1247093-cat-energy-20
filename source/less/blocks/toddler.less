@@ -1,0 +1,92 @@
+.toddler {
+  display: flex;
+  margin-left: 36px;
+  margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+    margin-left: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
+    margin-left: 40px;
+    margin-top: 19px;
+  }
+}
+
+.toddler__range-controls {
+  margin-top: 30px;
+  margin-left: 12px;
+  margin-right: 10px;
+  padding: 0;
+  border: none;
+  position: relative;
+  height: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: 23px;
+    margin-right: 21px;
+    height: 41px;
+    padding-top: 13px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+    margin: 0;
+  }
+}
+
+.toddler__scale {
+  width: 84px;
+  height: 14px;
+  border: 1px solid @border-neutral;
+  background-color: @basic-white;
+  border-radius: 50px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    height: 6px;
+    background-color: @milk-color;
+    width: 428px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: -3px;
+  }
+}
+
+.toddler__toggle {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: @bright-green;
+  padding: 0;
+  top: 27%;
+  left: 10%;
+
+  @media (min-width: @tablet-width) {
+    width: 8px;
+    height: 8px;
+    border: 12px solid @basic-white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 @basic-black;
+    top: 1%;
+    left: 47%;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    border: 0 3px 3px 1px @bright-green;
+    box-shadow: 0 3px 3px 1px @bright-green;
+  }
+}

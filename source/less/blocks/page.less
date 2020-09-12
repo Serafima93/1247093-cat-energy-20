@@ -1,0 +1,35 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page-main__wrapper {
+  margin-top: -10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.page-main__wrapper--index {
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.page__footer {
+  background-color: @neutral;
+  margin-top: -3px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -4px;
+  }
+}

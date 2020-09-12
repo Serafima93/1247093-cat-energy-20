@@ -1,0 +1,45 @@
+.subject__link {
+  font-weight: @normal-weight;
+  color: @basic-black;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1;
+  position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.subject__link::after {
+  content: "";
+  right: -45px;
+  top: 7px;
+  position: absolute;
+  width: 28px;
+  height: 10px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    right: -55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -55px;
+    top: 10px;
+  }
+}
+
+.subject__link:hover::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 32px;
+  height: 10px;
+}

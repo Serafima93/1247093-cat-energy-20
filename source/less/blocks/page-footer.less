@@ -1,0 +1,33 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 38px;
+  padding-bottom: 18px;
+  text-align: center;
+  background-color: @neutral;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 67px;
+    padding-right: 0;
+    padding-bottom: 53px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 25px;
+  }
+}
+
+.page-footer__tagline {
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}

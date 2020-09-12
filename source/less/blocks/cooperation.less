@@ -1,0 +1,77 @@
+.cooperation__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: @dark-black;
+  max-width: 135px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 171px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 36px;
+  }
+}
+
+.cooperation__address {
+  font-family: @font-part;
+  font-size: 14px;
+  line-height: 1.4;
+  color: @dark-grey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 138px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+    max-width: 159px;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    margin-top: -5px;
+    margin-right: 40px;
+    line-height: 1.2;
+  }
+}
+
+.cooperation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 66px;
+    padding-right: 42px;
+    padding-bottom: 57px;
+    padding-left: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-around;
+    width: 570px;
+    padding-top: 68px;
+    padding-right: 0;
+    padding-bottom: 60px;
+    padding-left: 0;
+  }
+}
+
+.cooperation__city {
+  padding-top: 2px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
+}

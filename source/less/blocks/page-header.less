@@ -1,0 +1,30 @@
+.page-header {
+  position: relative;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 54px;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 54px;
+    position: relative;
+  }
+}
+
+.page-header--catalog {
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 54px;
+    padding-top: 0;
+  }
+}

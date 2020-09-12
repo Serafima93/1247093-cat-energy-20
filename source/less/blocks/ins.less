@@ -1,0 +1,146 @@
+.ins__price {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  color: @basic-black;
+  margin-bottom: 34px;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    max-width: 174px;
+    text-align: end;
+    margin-top: 13px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 700px;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.ins__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 367px;
+  }
+}
+
+.ins {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    min-width: 400px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    padding-left: 70px;
+  }
+}
+
+.ins__parameter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid @border-color-basic;
+  border-radius: 5px;
+  min-height: 55px;
+  position: relative;
+  width: 122px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 70px;
+  }
+}
+
+.ins__value {
+  @media (min-width: @desktop-width) {
+    padding-top: 14px;
+  }
+}
+
+.ins__text {
+  color: @dark-grey;
+  font-size: 12px;
+  line-height: 1;
+  font-family: @font-part;
+  max-width: 59px;
+  z-index: -1;
+  background-color: @change-color;
+  position: absolute;
+  left: 33px;
+  top: 47px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    left: 20px;
+    top: 62px;
+    max-width: 162px;
+    padding-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: @basic-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -10px;
+    top: 70px;
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: @neutral;
+  }
+}
+
+.ins__number {
+  padding-bottom: 8px;
+  padding-top: 15px;
+  font-size: 24px;
+  line-height: 1;
+  color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 11px;
+    padding-top: 0;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+  }
+}
+
+.ins__money {
+  @media (min-width: @tablet-width) {
+    margin-top: 8px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 57px;
+    display: inline;
+  }
+}

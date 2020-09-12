@@ -1,0 +1,30 @@
+.button {
+  text-align: center;
+  color: @basic-white;
+  text-transform: uppercase;
+  background-color: @bright-green;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    color: @opacity-color-second;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

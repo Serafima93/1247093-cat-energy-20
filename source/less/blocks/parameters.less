@@ -1,0 +1,49 @@
+.parameters {
+  display: flex;
+  justify-content: space-between;
+  max-width: 140px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 253px;
+    margin: 0 auto;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 170px;
+  }
+}
+
+.parameters p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.3;
+  color: @dark-grey;
+  width: 76px;
+  font-family: @font-part;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 3px;
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    line-height: 1;
+  }
+}
+
+.parameters__value,
+.parameters__taste,
+.parameters__price {
+  text-align: start;
+}
+
+.parameters__gram,
+.parameters__sort,
+.parameters__rubles {
+  text-align: end;
+}

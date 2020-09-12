@@ -1,0 +1,87 @@
+.copyright__link {
+  font-family: @font-part;
+  font-weight: @normal-weight;
+  font-size: 16px;
+  line-height: 1;
+  color: @dark-grey;
+  margin-top: -2px;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 250px;
+  justify-content: space-between;
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 9px;
+  }
+}
+
+.copyright__logo {
+  fill: @dark-brown;
+  width: 40px;
+  height: 40px;
+  margin-right: -36px;
+  margin-top: 6px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: -6px;
+    padding-top: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 16px;
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    fill: @bright-green;
+  }
+
+  &:active {
+    fill: @bright-green;
+    opacity: 0.3;
+  }
+}
+
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -9px;
+    margin-right: 46px;
+  }
+}
+
+.copyright__brand {
+  margin-left: 0;
+  margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 87px;
+    margin-top: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+}

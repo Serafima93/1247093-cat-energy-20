@@ -12,19 +12,20 @@
 
 <body class="page__body">
   <header class="container">
-    <div class="page-header">
-      <a class="page-header__logo logo-image" href="index.html">
+    <div class="page-header page-header--form">
+      <a class="page-header__logo logo-image logo-image--form" href="index.html">
         <picture>
           <source media="(min-width: 1400px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" width="190" height="33" alt="Кошка">
+          <img src="img/logo-mobile.svg" width="190" height="33" alt="Кошка"
+            class="logo-image__picture logo-image__picture--form">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--form" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper main-nav__wrapper--form">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"> <a href="index.html" class="site-list__link">
                 Главная
@@ -45,73 +46,91 @@
   </header>
 
   <main class="container page__main">
-    <div class="page-main__wrapper data">
-      <div class="data__selection selection">
+    <div class="page-main__wrap">
+      <div class="selection">
         <h1 class="selection__title">Подбор программы</h1>
         <p class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
-      <form action="https://echo.htmlacademy.ru" method="GET" class="data__form form">
+      <form action="https://echo.htmlacademy.ru" method="GET" class="form">
         <div class="form__main">
+
           <fieldset class="form__options options">
-            <div class="options__selections">
-              <label for="name" class="options__question">ИМЯ:</label>
-              <input type="text" id="name" value="БАРСИК"> </div>
-            <div class="options__selections">
-              <label for="volume" class="options__question">Вес (кг):</label>
-              <input type="text" id="volume" value="7"> </div>
-            <div class="options__selections">
-              <label for="age" class="options__question">Возраст (лет):</label>
-              <input type="text" id="age" value="7"> </div>
+            <div class="options__selections options__selections--data">
+              <label for="name" class="options__label options__label--data">ИМЯ:</label>
+              <input type="text" id="name" placeholder="БАРСИК"> </div>
+            <div class="options__selections options__selections--data">
+              <label for="volume" class="options__label options__label--data">Вес (кг):</label>
+              <input type="text" id="volume" placeholder="7"> </div>
+            <div class="options__selections options__selections--data">
+              <label for="age" class="options__label options__label--data options__label--age">Возраст (лет):</label>
+              <input type="text" id="age" placeholder="7"> </div>
           </fieldset>
-          <fieldset class="form__type options">
-            <div class="options__selections">
-              <input type="checkbox" id="lose" checked>
-              <label for="lose">похудение</label>
-            </div>
-            <div class="options__selections">
-              <input type="checkbox" id="gain">
-              <label for="gain">Набор массы</label>
-            </div>
-            <div class="options__selections">
-              <input type="checkbox" id="advice">
-              <label for="advice">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
+
+          <div class="form__type options">
+            <fieldset class="options__fieldset">
+              <input type="radio" id="lose" name="program" checked tabindex="0" class="options__input">
+              <label for="lose" class="options__label options__label--program">похудение</label>
+              <input type="radio" id="gain" name="program" tabindex="0" class="options__input">
+              <label for="gain" class="options__label options__label--program">Набор массы</label>
+              <input type="radio" id="advice" name="program" tabindex="0" class="options__input">
+              <label for="advice" class="options__label options__label--program">Не знаю (Нужен ваш совет)</label>
+            </fieldset>
+          </div>
+
         </div>
         <fieldset class="form__contacts options">
-          <legend class="options__name">Контактные данные (владельца кота)</legend>
+          <div class="options__title options__title--contact">
+            <h2 class="options__name options__name--contact">Контактные данные (владельца кота)</h2>
+          </div>
           <div class="options__communication">
-            <div class="options__selections">
-              <label for="email">Email:*</label>
-              <input type="email" id="email" placeholder="kuklachev@gmail.com"> </div>
-            <div class="options__selections">
-              <label for="phone">Телефон:*</label>
-              <input type="tel" id="phone" value="8 (960) 900-60-90"> </div>
+            <div class="options__selections options__selections-communication  options__selections--mail ">
+              <label for="email"
+                class="options__label options__label--communication options__label--mail">E-mail:*</label>
+              <input type="email" id="email" placeholder="kuklachev@gmail.com" class="options__communication-input">
+              <svg width="20" height="13" class="options__icon options__icon--mail">
+                <use xlink:href="img/sprite.svg#icon-mail "></use>
+              </svg>
+            </div>
+            <div class="options__selections options__selections-communication options__selections--phone">
+              <label for="phone"
+                class="options__label options__label--communication options__label--telephone">Телефон:*</label>
+              <input type="tel" id="phone" placeholder="8 (960) 900-60-90" pattern="8-[0-9]{3}-[0-9]{3} class="
+                options__communication-input">
+              <svg width="19" height="20" class="options__icon options__icon--phone">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__comment options">
-          <legend class="options__name">Комментарий</legend>
-          <textarea name="comment" id="comment-field" rows="10"
-            class="options__comment">Расскажите обо всех повАдках кота</textarea>
+          <div class="options__title options__title--comment">
+            <h2 class="options__name options__name--comment">Комментарий</h2>
+          </div>
+          <textarea name="comment" id="comment-field" rows="7" cols="20"
+            class="options__comment">Расскажите обо всех повадках кота</textarea>
         </fieldset>
+
         <fieldset class="form__additional options">
-          <legend class="options__name options__name--additional">Дополнительно</legend>
+          <div class="options__title options__title--additional">
+            <h2 class="options__name options__name--additional">Дополнительно</h2>
+          </div>
+
           <div class="options__wrap">
-            <div class="options__selections">
-              <input type="checkbox" id="sugar" checked>
-              <label for="sugar">сахарозаменитель</label>
+            <div class="options__selections options__selections--components">
+              <input type="checkbox" id="sugar" checked class="options__components-input">
+              <label for="sugar" class="options__label options__label--components">сахарозаменитель</label>
             </div>
-            <div class="options__selections">
-              <input type="checkbox" id="water">
-              <label for="water">питьевая вода</label>
+            <div class="options__selections options__selections--components">
+              <input type="checkbox" id="water" class="options__components-input">
+              <label for="water" class="options__label options__label--components">питьевая вода</label>
             </div>
-            <div class="options__selections">
-              <input type="checkbox" id="milk">
-              <label for="milk">молоко</label>
+            <div class="options__selections options__selections--components">
+              <input type="checkbox" id="milk" class="options__components-input">
+              <label for="milk" class="options__label options__label--components">молоко</label>
             </div>
-            <div class="options__selections">
-              <input type="checkbox" id="vitamin">
-              <label for="vitamin">витамины</label>
+            <div class="options__selections options__selections--components">
+              <input type="checkbox" id="vitamin" class="options__components-input">
+              <label for="vitamin" class="options__label options__label--components">витамины</label>
             </div>
           </div>
         </fieldset>
@@ -120,22 +139,22 @@
           <p class="form__note">* — Обязательные поля</p>
         </div>
       </form>
-      <section class="data__coopearation cooperation">
-        <div class="cooperation__text"> приглашаем к сотрудничеству дилеров! </div>
-        <div class="cooperation__adress"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург </div>
-      </section>
-      <picture>
-        <source type="image/webp" media="(min-width: 1300px)"
-          srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
-        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-        <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
-      </picture>
+      <div class="form__wrap">
+        <section class="form__cooperation cooperation">
+          <p class="cooperation__text"> приглашаем<br> к сотрудничеству дилеров! </p>
+          <p class="cooperation__address"> ул. Большая Конюшенная, д. 19/8
+            <span class="cooperation__city">Санкт-Петербург</span>
+          </p>
+        </section>
+      </div>
     </div>
   </main>
+  <div class="container container-iframe">
+    <iframe class="iframe__map"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2970836258144!2d30.3219997!3d59.9388761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1526233818772"
+      title="Магазин. ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+    </iframe>
+  </div>
 
   <footer class="container page__footer">
     <div class="page-footer__wrapper">
@@ -171,15 +190,17 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy
 
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <p class="copyright__brand">HTML Academy</p>
           <svg width="60" height="60" class="copyright__logo">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
+
   </footer>
   <script src="js/script.js"></script>
 </body>

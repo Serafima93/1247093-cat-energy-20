@@ -1,0 +1,130 @@
+.introduction__wrap {
+  font-family: @font-full;
+  width: 100%;
+  min-height: 305px;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    min-height: 860px;
+    text-align: left;
+    margin-top: 8px;
+    max-width: 700px;
+    margin-left: 0;
+    margin-bottom: -49px;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 530px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 58px;
+    margin-bottom: 0;
+    max-width: 1000px;
+  }
+}
+
+.introduction__title {
+  font-family: @font-full;
+  font-weight: @normal-weight;
+  color: @basic-white;
+  line-height: 1;
+  font-size: 36px;
+  padding-top: 25px;
+  text-align: center;
+  max-width: 249px;
+  margin-top: 0;
+  margin-left: 15px;
+  margin-bottom: 0;
+  margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    color: @basic-black;
+    margin-left: 88px;
+    padding: 0;
+    text-align: start;
+    max-width: 415px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.introduction__tagline {
+  font-weight: @normal-weight;
+  text-transform: uppercase;
+  margin: 0;
+  color: @basic-white;
+  padding-top: 25px;
+  padding-bottom: 312px;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 68px;
+    padding-left: 0;
+    padding-right: 0;
+    color: @basic-black;
+    text-align: start;
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    max-width: 400px;
+    margin: 0;
+  }
+}
+
+.introduction__btn {
+  color: @basic-white;
+
+  &:hover,
+  &:focus {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    color: @opacity-color-second;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 81px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.introduction__picture {
+  z-index: 0;
+  position: absolute;
+  left: 0%;
+  top: 35%;
+
+  @media (min-width: @tablet-width) {
+    z-index: -1;
+    left: 1%;
+    top: 23%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 37%;
+    top: -16%;
+  }
+}

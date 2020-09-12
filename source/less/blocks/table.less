@@ -1,0 +1,53 @@
+.table {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 45px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 46px;
+  }
+}
+
+.table__name {
+  font-weight: @normal-weight;
+  text-transform: uppercase;
+  color: @special-dark-grey;
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 76px;
+  margin-left: 3px;
+  margin-bottom: 15px;
+  margin-top: 18px;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 3px;
+    font-size: 20px;
+    max-width: 140px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 5px;
+    line-height: 1;
+    padding-top: 36px;
+    max-width: 145px;
+  }
+}
+
+.table__parameters {
+  margin-left: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 14px;
+  }
+}
